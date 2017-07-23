@@ -8,6 +8,9 @@ module.exports = {
     compress: true,
     port: 9000
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
   entry: {
     app: ['./js/entry.js', './style/main.scss'],
   },
@@ -17,7 +20,7 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.jsx?$/, exclude: '/node_modules/', use: 'babel-loader' },
+      { test: /\.jsx?$/, exclude: /node_modules/, use: 'babel-loader' },
       {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
@@ -28,7 +31,9 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    }),
     new ExtractTextPlugin("[name].css"),
   ]
 }
