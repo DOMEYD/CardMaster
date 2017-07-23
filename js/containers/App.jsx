@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 // Reducers
 import cards from '../reducers/cards';
 // Containers
-import CardList from "../containers/CardList";
+import CardList from './CardList/CardList';
 
 // Make the store
 const store = createStore(combineReducers({
