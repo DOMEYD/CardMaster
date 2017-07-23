@@ -2,8 +2,10 @@ import React, { PureComponent } from 'react';
 
 class Card extends PureComponent {
   render() {
+    const { card } = this.props;
+
     return <div>
-      {this.props.card.id}
+      { card.name }
     </div>
   }
 }

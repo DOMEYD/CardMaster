@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import Card from "../components/Card/component";
+import Card from "../components/Card/Card";
+import { fetchCards } from "../actions/cards";
 
 class CardList extends Component {
+  componentWillMount() {
+    this.props.dispatch(fetchCards());
+  }
   render() {
     const { cards } = this.props;
-    return <ul>
-      {cards.map(card => <li key={card.id}>
-        <Card card={card} />
-      </li>)}
-    </ul>
+    return <div>
+      {cards.isFetching ?
+        <div><span className="loader"></span></div> :
+        <ul>{cards.data.map(card => <li key={card.cardId}>
+            <Card card={card} />
+          </li>)}
+        </ul>}
+    </div>
   }
 }
 
