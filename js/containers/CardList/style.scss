@@ -1,7 +1,11 @@
 .card-list-container {
-  list-style: none;
+  display: flex;
 
-  li {
-    display: inline-block;
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
   }
 }
