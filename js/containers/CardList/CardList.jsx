@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import autobind from 'autobind-decorator';
 import Card from '../../components/Card/Card';
 import Loader from '../../components/Loader/Loader';
@@ -72,6 +73,7 @@ class CardList extends Component {
             { this.props.cardsSelected.map(selected => <li>{selected.name}</li>) }
           </ul>
         </section>
+        <Link to="/fight">FIGHT !</Link>
       </aside>
     </div>
   }
