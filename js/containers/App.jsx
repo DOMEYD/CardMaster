@@ -4,12 +4,14 @@ import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunk from 'redux-thunk';
 // Reducers
 import cards from '../reducers/cards';
+import cardsSelected from '../reducers/cardsSelected';
 // Containers
 import CardList from './CardList/CardList';
 
 // Make the store
 const store = createStore(combineReducers({
   cards,
+  cardsSelected,
 }), applyMiddleware(thunk));
 
 class App extends Component {

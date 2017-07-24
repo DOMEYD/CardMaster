@@ -3,9 +3,14 @@
 
   ul {
     list-style: none;
+    flex: 2;
 
     li {
       display: inline-block;
     }
+  }
+
+  aside {
+    flex: 1;
   }
 }

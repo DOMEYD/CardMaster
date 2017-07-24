@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import autobind from 'autobind-decorator';
 import Card from '../../components/Card/Card';
 import Loader from '../../components/Loader/Loader';
-import { fetchCards } from "../../actions/cards";
+import { fetchCards, toggleCard } from "../../actions/cards";
 import './style.scss';
 
 class CardList extends Component {
@@ -41,6 +41,11 @@ class CardList extends Component {
     return cards;
   }
 
+  @autobind
+  toggleCardSelection(card) {
+    this.props.dispatch(toggleCard(card));
+  }
+
   render() {
     const { cards } = this.props;
     if (cards.isFetching) {
@@ -48,7 +53,7 @@ class CardList extends Component {
     }
     return <div className="card-list-container">
       <ul className="card-list">
-        {this.cards().map(card => <li key={card.cardId}>
+        {this.cards().map(card => <li key={card.cardId} onClick={() => this.toggleCardSelection(card)}>
           <Card card={card} />
         </li>)}
       </ul>
@@ -62,6 +67,11 @@ class CardList extends Component {
             </label>)}
           </div>
         </section>
+        <section>
+          <ul>
+            { this.props.cardsSelected.map(selected => <li>{selected.name}</li>) }
+          </ul>
+        </section>
       </aside>
     </div>
   }
@@ -70,6 +80,7 @@ class CardList extends Component {
 function mapStateToProps(state) {
   return {
     cards: state.cards,
+    cardsSelected: state.cardsSelected,
   }
 }
 

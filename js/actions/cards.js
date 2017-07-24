@@ -16,3 +16,10 @@ export const fetchCards = () => dispatch => {
       payload,
     }))
 };
+
+export const toggleCard = (card) => {
+  return {
+    type: 'CARD_TOGGLE_SELECTION',
+    card,
+  }
+};
