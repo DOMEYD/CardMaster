@@ -2,72 +2,72 @@
   "figures": [
     {
       "name": "Nain de combat",
-      "value": "5",
-      "health": "7",
-      "attq": "5",
+      "value": 5,
+      "health": 7,
+      "attq": 5,
       "img": "img/figures/336x448_BattleDwarf.png"
     },
     {
       "name": "Bruce Wayne",
-      "value": "8",
-      "health": "5",
-      "attq": "6",
+      "value": 8,
+      "health": 5,
+      "attq": 6,
       "img": "img/figures/336x448_Brucewayne.png"
     },
     {
       "name": "Fille Papillon",
-      "value": "2",
-      "health": "5",
-      "attq": "1",
+      "value": 2,
+      "health": 5,
+      "attq": 1,
       "img": "img/figures/336x448_ButterflyGirl.png"
     },
     {
       "name": "Connaisseur",
-      "value": "3",
-      "health": "4",
-      "attq": "2",
+      "value": 3,
+      "health": 4,
+      "attq": 2,
       "img": "img/figures/336x448_Connoisseur.png"
     },
     {
       "name": "Homme épi de maïs",
-      "value": "2",
-      "health": "2",
-      "attq": "2",
+      "value": 2,
+      "health": 2,
+      "attq": 2,
       "img": "img/figures/336x448_CornCubGuy.png"
     },
     {
       "name": "Ursula",
-      "value": "7",
-      "health": "5",
-      "attq": "5",
+      "value": 7,
+      "health": 5,
+      "attq": 5,
       "img": "img/figures/336x448_Disney_0000s_0000_71012_Leaflet_Ursula-hires.jpg"
     },
     {
       "name": "Peter Pan",
-      "value": "1",
-      "health": "2",
-      "attq": "2",
+      "value": 1,
+      "health": 2,
+      "attq": 2,
       "img": "img/figures/336x448_Disney_0000s_0001_71012_Leaflet_Peter-Pan-hires.jpg"
     },
     {
       "name": "Chat de Cheshire",
-      "value": "2",
-      "health": "6",
-      "attq": "1",
+      "value": 2,
+      "health": 6,
+      "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0002_71012_Leaflet_Cheshire-Cat-hires-150923.jpg"
     },
     {
       "name": "Alice au pays des merveilles",
-      "value": "2",
-      "health": "4",
-      "attq": "1",
+      "value": 2,
+      "health": 4,
+      "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0003_71012_Leaflet_Alice-hires-150923.jpg"
     },
     {
       "name": "Donald",
-      "value": "1",
-      "health": "2",
-      "attq": "1",
+      "value": 1,
+      "health": 2,
+      "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0004_71012_Leaflet_Donald-Duck-hires-150923.jpg"
     }
   ]

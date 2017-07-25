@@ -35,7 +35,7 @@ class CardList extends Component {
 
     if (ammounts.length > 0) {
       cards = cards.filter(card => {
-        return ammounts.indexOf(card.cost ? card.cost.toString() : '0') > -1
+        return ammounts.indexOf(card.value ? card.value.toString() : '0') > -1
       })
     }
 
