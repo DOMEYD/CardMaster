@@ -22,11 +22,20 @@ class CardList extends Component {
 
   @autobind
   filterCards(e) {
-    this.setState({
-      filter: {
-        ammounts: [...this.state.filter.ammounts, e.currentTarget.value]
-      }
-    });
+    const index = this.state.filter.ammounts.indexOf(e.currentTarget.value);
+    if (index > -1) {
+      this.setState({
+        filter: {
+          ammounts: this.state.filter.ammounts.slice(0,index).concat(this.state.filter.ammounts.slice(index+1)),
+        }
+      });
+    } else {
+      this.setState({
+        filter: {
+          ammounts: [...this.state.filter.ammounts, e.currentTarget.value]
+        }
+      });
+    }
   }
 
   cards = () => {
@@ -63,7 +72,7 @@ class CardList extends Component {
           <header>Filter</header>
           <div>
             {(new Array(10)).fill(0).map((k,i) => <label key={i}>
-              <input type="checkbox" name="value" value={i} onChange={this.filterCards}/>
+              <input type="checkbox" name="value" value={i} onChange={this.filterCards} />
               {i}
             </label>)}
           </div>
