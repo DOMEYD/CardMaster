@@ -70,7 +70,7 @@ class CardList extends Component {
         </section>
         <section className="selected-cards">
           <ul>
-            { this.props.cardsSelected.map(selected => <li key={selected.cardId}>{selected.name}</li>) }
+            { this.props.cardsSelected.map(selected => <Card card={selected} minimal={true} />) }
           </ul>
         </section>
         <Link to="/fight" className="fight-btn">FIGHT !</Link>

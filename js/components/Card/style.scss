@@ -24,9 +24,10 @@
   .card-infos {
     display: flex;
 
-    > span {
+    > .info {
       flex: 1;
       text-align: center;
+      white-space: nowrap;
     }
   }
 
@@ -34,5 +35,40 @@
     max-width: 1em;
     vertical-align: top;
     margin-right: 3px;
+  }
+
+  &.small {
+    display: flex;
+    margin: 0.5rem 0;
+    max-width: initial;
+    padding: 0.3rem;
+    box-shadow: 0 0 3px grey;
+    animation: appear 200ms;
+
+    .figure {
+      display: none;
+    }
+
+    .card-name,
+    .card-infos {
+      flex: 1;
+    }
+
+    .card-name {
+      margin: 0.3rem 0;
+    }
+
+    .info {
+      align-self: center;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
