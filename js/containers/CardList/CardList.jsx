@@ -63,7 +63,7 @@ class CardList extends Component {
     }
     return <div className="card-list-container">
       <ul className="card-list">
-        {this.cards().map(card => <li key={card.cardId} onClick={() => this.toggleCardSelection(card)}>
+        {this.cards().map(card => <li key={card.name} onClick={() => this.toggleCardSelection(card)}>
           <Card card={card} />
         </li>)}
       </ul>
