@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin");
 
 module.exports = {
   devServer: {
@@ -41,5 +42,11 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'img/', to: 'img/' },
     ]),
+
+    new GoogleFontsPlugin({
+      fonts: [
+        { family: "Patrick Hand" }
+      ]
+    })
   ]
 }
