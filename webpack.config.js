@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devServer: {
@@ -36,5 +37,9 @@ module.exports = {
       template: './index.html'
     }),
     new ExtractTextPlugin("[name].css"),
+
+    new CopyWebpackPlugin([
+      { from: 'img/', to: 'img/' },
+    ]),
   ]
 }

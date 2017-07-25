@@ -4,17 +4,11 @@ export const CARD_FETCHING = {
 
 export const fetchCards = () => dispatch => {
   dispatch(CARD_FETCHING);
-
-  return fetch('https://omgvamp-hearthstone-v1.p.mashape.com/cards?collectible=1&locale=frFR', {
-    headers: {
-      'X-Mashape-Key': 'Dj3yLxYpbEmshaBbOSuWbGc0Hgncp1RPKuzjsnrQ18SrbDDkcS'
-    }
+  const cards = require('../../json/figure.json');
+  dispatch({
+    type: 'CARD_DATA_RECEIVE',
+    payload: cards.figures,
   })
-    .then(response => response.json())
-    .then(payload => dispatch({
-      type: 'CARD_DATA_RECEIVE',
-      payload,
-    }))
 };
 
 export const toggleCard = (card) => {

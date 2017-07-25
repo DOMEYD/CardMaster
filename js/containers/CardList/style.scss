@@ -1,7 +1,7 @@
 .card-list-container {
   display: flex;
 
-  ul {
+  .card-list {
     list-style: none;
     flex: 2;
 
@@ -12,5 +12,13 @@
 
   aside {
     flex: 1;
+
+    .selected-cards {
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
   }
 }
