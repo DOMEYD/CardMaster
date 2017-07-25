@@ -73,7 +73,7 @@ class CardList extends Component {
             { this.props.cardsSelected.map(selected => <li key={selected.cardId}>{selected.name}</li>) }
           </ul>
         </section>
-        <Link to="/fight">FIGHT !</Link>
+        <Link to="/fight" className="fight-btn">FIGHT !</Link>
       </aside>
     </div>
   }
