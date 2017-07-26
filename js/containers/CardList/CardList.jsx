@@ -76,9 +76,9 @@ class CardList extends Component {
         <section>
           <header>Filter</header>
           <div>
-            {(new Array(10)).fill(0).map((k,i) => <label key={i}>
-              <input type="checkbox" name="value" value={i} onChange={this.filterCards} />
-              {i}
+            {(new Array(9)).fill(0).map((k,i) => <label key={i+1}>
+              <input type="checkbox" name="value" value={i+1} onChange={this.filterCards} />
+              {i+1}
             </label>)}
           </div>
         </section>

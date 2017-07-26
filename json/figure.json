@@ -69,6 +69,237 @@
       "health": 2,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0004_71012_Leaflet_Donald-Duck-hires-150923.jpg"
+    },
+    {
+      "name": "Minnie",
+      "value": 1,
+      "health": 2,
+      "attq": 1,
+      "img": "img/figures/336x448_Disney_0000s_0005_71012_Leaflet_Mini-Mouse-hires-151012.jpg"
+    },
+    {
+      "name": "Mickey",
+      "value": 1,
+      "health": 2,
+      "attq": 1,
+      "img": "img/figures/336x448_Disney_0000s_0006_71012_Leaflet_Mickey-Mouse-hires-151012.jpg"
+    },
+    {
+      "name": "Daisy",
+      "value": 2,
+      "health": 3,
+      "attq": 1,
+      "img": "img/figures/336x448_Disney_0000s_0007_71012_Leaflet_Daisy-Duck-hires-150923.jpg"
+    },
+    {
+      "name": "Capitaine Crochet",
+      "value": 2,
+      "health": 2,
+      "attq": 3,
+      "img": "img/figures/336x448_Disney_0000s_0008_71012_Leaflet_Captain-Hook-hires-151012.jpg"
+    },
+    {
+      "name": "La petite sirène",
+      "value": 1,
+      "health": 2,
+      "attq": 1,
+      "img": "img/figures/336x448_Disney_0000s_0009_71012_Leaflet_Ariel-hires.jpg"
+    },
+    {
+      "name": "Syndrome",
+      "value": 2,
+      "health": 2,
+      "attq": 3,
+      "img": "img/figures/336x448_Disney_0000s_0010_71012_Leaflet_Syndrome-hires.jpg"
+    },
+    {
+      "name": "Alien",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_Disney_0000s_0011_71012_Leaflet_Alien-hire.jpg"
+    },
+    {
+      "name": "Monsieur Incredible",
+      "value": 2,
+      "health": 2,
+      "attq": 3,
+      "img": "img/figures/336x448_Disney_0000s_0012_71012_Leaflet_Mr-Incredible-hires.jpg"
+    },
+    {
+      "name": "Aladin",
+      "value": 3,
+      "health": 2,
+      "attq": 4,
+      "img": "img/figures/336x448_Disney_0000s_0013_71012_Leaflet_Aladdin-hires.jpg"
+    },
+    {
+      "name": "Stitch",
+      "value": 3,
+      "health": 3,
+      "attq": 4,
+      "img": "img/figures/336x448_Disney_0000s_0014_71012_Leaflet_Stitch-hires-150923.jpg"
+    },
+    {
+      "name": "Buzz L'éclair",
+      "value": 3,
+      "health": 4,
+      "attq": 4,
+      "img": "img/figures/336x448_Disney_0000s_0015_71012_Leaflet_Buzz-Lightyear-hire.jpg"
+    },
+    {
+      "name": "Maléfique",
+      "value": 3,
+      "health": 3,
+      "attq": 3,
+      "img": "img/figures/336x448_Disney_0000s_0016_71012_Leaflet_Malificent-hires.jpg"
+    },
+    {
+      "name": "Génie de la lampe",
+      "value": 2,
+      "health": 2,
+      "attq": 2,
+      "img": "img/figures/336x448_Disney_0000s_0017_71012_Leaflet_Genie-hires.jpg"
+    },
+    {
+      "name": "Elfe",
+      "value": 4,
+      "health": 3,
+      "attq": 4,
+      "img": "img/figures/336x448_ElfMaiden.png"
+    },
+    {
+      "name": "La prof de fitness",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_FitnessInstructor.png"
+    },
+    {
+      "name": "Gladiateur",
+      "value": 5,
+      "health": 3,
+      "attq": 6,
+      "img": "img/figures/336x448_Gladiator.png"
+    },
+    {
+      "name": "Cuisinier",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_GourmetChef.png"
+    },
+    {
+      "name": "Bandit de grand chemin",
+      "value": 4,
+      "health": 4,
+      "attq": 4,
+      "img": "img/figures/336x448_Highwayman.png"
+    },
+    {
+      "name": "Vendeur de Hotdog",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_Hotdog_Vendor.png"
+    },
+    {
+      "name": "Surfeur",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_Prosurfer.png"
+    },
+    {
+      "name": "Héro spatial rétro",
+      "value": 5,
+      "health": 5,
+      "attq": 3,
+      "img": "img/figures/336x448_Retrospacehero.png"
+    },
+    {
+      "name": "Garçon fusée",
+      "value": 3,
+      "health": 3,
+      "attq": 2,
+      "img": "img/figures/336x448_RocketBoy.png"
+    },
+    {
+      "name": "Homme fort du cirque",
+      "value": 3,
+      "health": 2,
+      "attq": 5,
+      "img": "img/figures/336x448_Strongman.png"
+    },
+    {
+      "name": "Vétérinaire",
+      "value": 2,
+      "health": 1,
+      "attq": 3,
+      "img": "img/figures/336x448_Vet.png"
+    },
+    {
+      "name": "Yuppie",
+      "value": 1,
+      "health": 1,
+      "attq": 1,
+      "img": "img/figures/336x448_Yuppie.png"
+    },
+    {
+      "name": "Ninja",
+      "value": 6,
+      "health": 4,
+      "attq": 7,
+      "img": "img/figures/8683_Portrait_Ninja.png"
+    },
+    {
+      "name": "Space Marine",
+      "value": 9,
+      "health": 8,
+      "attq": 8,
+      "img": "img/figures/8831_Portrait_SpaceMarine.png"
+    },
+    {
+      "name": "Le vengeur extraterrestre",
+      "value": 9,
+      "health": 6,
+      "attq": 10,
+      "img": "img/figures/71000_Portrait_SpaceOrc.png"
+    },
+    {
+      "name": "Panda",
+      "value": 4,
+      "health": 3,
+      "attq": 3,
+      "img": "img/figures/71004_Portrait_DudePanda.png"
+    },
+    {
+      "name": "Bart",
+      "value": 3,
+      "health": 1,
+      "attq": 5,
+      "img": "img/figures/Bart_168x224.jpg"
+    },
+    {
+      "name": "Chtullu",
+      "value": 9,
+      "health": 10,
+      "attq": 10,
+      "img": "img/figures/characters_168x224_serie13_Alien.png"
+    },
+    {
+      "name": "Licorne",
+      "value": 5,
+      "health": 6,
+      "attq": 7,
+      "img": "img/figures/characters_168x224_serie13_Unicorn.png"
+    },
+    {
+      "name": "Homer",
+      "value": 4,
+      "health": 2,
+      "attq": 5,
+      "img": "img/figures/Homer_168x224.jpg"
     }
   ]
 }
