@@ -1,10 +1,6 @@
 body {
-  background-color: lightblue;
-  background-image: url(http://img06.deviantart.net/cad5/i/2017/040/5/c/game_background_by_biondic2016-dayhqky.jpg);
-  background-size: auto 100vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background: lightblue url(https://www.warnerbros.com/sites/default/files/lego_batman_background1.jpg) no-repeat fixed center center;
+  background-size: cover;
 
   margin: 0;
   padding: 0;
