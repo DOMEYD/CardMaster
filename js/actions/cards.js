@@ -24,3 +24,11 @@ export const removeCard = (card) => {
     card
   }
 };
+
+export const moveToBoard = (card) => dispatch => {
+  dispatch(removeCard(card));
+  dispatch({
+      type: 'CARD_ADD_BOARD',
+      card
+  })
+}

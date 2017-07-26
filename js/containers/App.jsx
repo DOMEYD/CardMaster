@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 // Reducers
 import cards from '../reducers/cards';
 import cardsSelected from '../reducers/cardsSelected';
+import board from "../reducers/board";
 // Containers
 import CardList from './CardList/CardList';
 import CardFight from './CardFight/CardFight';
@@ -14,6 +15,7 @@ import CardFight from './CardFight/CardFight';
 const store = createStore(combineReducers({
   cards,
   cardsSelected,
+  board,
 }), applyMiddleware(thunk));
 
 class App extends Component {
