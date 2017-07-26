@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from '../../components/Card/Card';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import './style.scss';
 
 class CardFight extends Component {
   componentDidMount() {
@@ -10,9 +11,11 @@ class CardFight extends Component {
     }
   }
   render() {
-    return <main>
-      <section>
-        { this.props.cardsSelected.map(card => <Card card={card} />) }
+    return <main className="fight">
+      <section className="hand"></section>
+      <section className="board"></section>
+      <section className="hand">
+        { this.props.cardsSelected.slice(0,5).map(card => <Card card={card} />) }
       </section>
     </main>
   }

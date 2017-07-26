@@ -1,0 +1,24 @@
+.fight {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+
+  .board {
+    flex: 1;
+  }
+
+  .hand {
+    display: flex;
+    align-items: center;
+
+    .card {
+      transform: translateY(50%);
+      transition: transform 250ms ease;
+
+      &:hover {
+        transform: translateY(0);
+      }
+    }
+  }
+}
