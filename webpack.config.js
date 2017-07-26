@@ -15,7 +15,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   entry: {
-    app: ['./js/entry.js', './style/main.scss'],
+    app: ['./js/entry.jsx', './style/main.scss'],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -23,6 +23,16 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          configFile: './.eslintrc',
+          emitWarning: true,
+        }
+      },
       { test: /\.jsx?$/, exclude: /node_modules/, use: 'babel-loader' },
       {
         test: /\.scss$/,

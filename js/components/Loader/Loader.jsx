@@ -3,7 +3,7 @@ import './style.scss';
 
 class Loader extends PureComponent {
   render() {
-    return <div><span className="loader"></span></div>;
+    return <div><span className="loader" /></div>;
   }
 }
 

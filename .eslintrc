@@ -1,0 +1,12 @@
+{
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "react/prefer-stateless-function": "off",
+    "no-case-declarations": "off"
+  },
+  "parser": "babel-eslint",
+  "extends": "airbnb"
+}
