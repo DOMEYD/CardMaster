@@ -21,7 +21,7 @@ class Board extends Component {
     render() {
         const { connectDropTarget, board } = this.props;
         return connectDropTarget(<section className="board">
-            { board ? board.map(card => <Card card={card} />) : null }
+            { board ? board.map(card => <Card key={card.name} card={card} />) : null }
         </section>);
     }
 }

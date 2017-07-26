@@ -4,20 +4,59 @@
   height: 100vh;
   overflow: hidden;
 
+  .enemy-board {
+    display: flex;
+    height: 20vh;
+
+    .card {
+      cursor: not-allowed;
+
+      &:hover {
+        box-shadow: inherit;
+      }
+    }
+  }
+
   .board {
-    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 60vh;
+    justify-content: center;
   }
 
   .hand {
     display: flex;
     align-items: center;
+    height: 20vh;
 
     .card {
       transform: translateY(50%);
       transition: transform 250ms ease;
+      cursor: move;
 
       &:hover {
         transform: translateY(0);
+      }
+    }
+  }
+
+  .hand,
+  .enemy-board {
+    justify-content: center;
+
+    .card {
+      width: calc(5vh + 2rem);
+
+      .figure {
+        max-width: 5vh;
+        margin: auto;
+      }
+
+      .card-name {
+        font-size: 0.9rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
       }
     }
   }
