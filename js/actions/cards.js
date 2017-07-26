@@ -11,9 +11,16 @@ export const fetchCards = () => dispatch => {
   })
 };
 
-export const toggleCard = (card) => {
+export const addCard = (card) => {
   return {
-    type: 'CARD_TOGGLE_SELECTION',
+    type: 'CARD_ADD_SELECTION',
     card,
+  }
+};
+
+export const removeCard = (card) => {
+  return {
+    type: 'CARD_REMOVE_SELECTION',
+    card
   }
 };

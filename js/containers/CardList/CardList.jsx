@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import autobind from 'autobind-decorator';
 import Card from '../../components/Card/Card';
 import Loader from '../../components/Loader/Loader';
-import { fetchCards, toggleCard } from "../../actions/cards";
+import {fetchCards, removeCard, addCard} from "../../actions/cards";
 import './style.scss';
 
 class CardList extends Component {
@@ -53,7 +53,12 @@ class CardList extends Component {
 
   @autobind
   toggleCardSelection(card) {
-    this.props.dispatch(toggleCard(card));
+    this.props.dispatch(addCard(card));
+  }
+
+  @autobind
+  removeCardFromSelection(card) {
+    this.props.dispatch(removeCard(card));
   }
 
   render() {
@@ -79,7 +84,9 @@ class CardList extends Component {
         </section>
         <section className="selected-cards">
           <ul>
-            { this.props.cardsSelected.map(selected => <Card card={selected} minimal={true} />) }
+            { this.props.cardsSelected.map(selected => <li key={selected.name} onClick={() => this.removeCardFromSelection(selected)}>
+              <Card card={selected} minimal={true} />
+            </li>) }
           </ul>
         </section>
         <Link to="/fight" className="fight-btn">FIGHT !</Link>
