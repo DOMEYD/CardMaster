@@ -1,35 +1,39 @@
 import React, { Component } from 'react';
 import { DropTarget } from 'react-dnd';
 import { connect } from 'react-redux';
-import Card from "./Card/Card";
+import PropTypes from 'prop-types';
+import Card from './Card/Card';
 
 const boardTarget = {
-    hover(props, monitor, component) {},
-    drop(props, monitor, component) {
-        return {
-            type: 'BOARD'
-        }
-    }
-}
+  drop() {
+    return {
+      type: 'BOARD',
+    };
+  },
+};
 
-@DropTarget('card', boardTarget, (connect, monitor) => ({
-    connectDropTarget: connect.dropTarget(),
-    isOver: monitor.isOver(),
-    canDrop: monitor.canDrop(),
+@DropTarget('card', boardTarget, (con, monitor) => ({
+  connectDropTarget: con.dropTarget(),
+  isOver: monitor.isOver(),
+  canDrop: monitor.canDrop(),
 }))
 class Board extends Component {
-    render() {
-        const { connectDropTarget, board } = this.props;
-        return connectDropTarget(<section className="board">
-            { board ? board.map(card => <Card key={card.name} card={card} />) : null }
-        </section>);
-    }
+  static propTypes = {
+    connectDropTarget: PropTypes.func.isRequired,
+    board: PropTypes.arrayOf(Card),
+  }
+  render() {
+    const { connectDropTarget, board } = this.props;
+    return connectDropTarget(<section className="board">
+      {board ? board.map(card => <Card key={card.name} card={card} />) : null}
+    </section>);
+  }
 }
 
 function mapStateToProps(state) {
-    return {
-        board: state.board,
-    }
+  return {
+    board: state.board,
+  };
 }
 
 export default connect(mapStateToProps)(Board);

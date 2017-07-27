@@ -11,26 +11,20 @@ export const fetchCards = () => (dispatch) => {
   });
 };
 
-export const addCard = (card) => {
-  return {
-    type: 'CARD_ADD_SELECTION',
-    card,
-  };
-};
+export const addCard = card => ({
+  type: 'CARD_ADD_SELECTION',
+  card,
+});
 
-export const removeCard = (card) => {
-  return {
-    type: 'CARD_REMOVE_SELECTION',
-    card,
-  };
-};
+export const removeCard = card => ({
+  type: 'CARD_REMOVE_SELECTION',
+  card,
+});
 
-export const moveToBoard = (card) => {
-  return (dispatch) => {
-    dispatch(removeCard(card));
-    dispatch({
-      type: 'CARD_ADD_BOARD',
-      card,
-    });
-  };
+export const moveToBoard = card => (dispatch) => {
+  dispatch(removeCard(card));
+  dispatch({
+    type: 'CARD_ADD_BOARD',
+    card,
+  });
 };

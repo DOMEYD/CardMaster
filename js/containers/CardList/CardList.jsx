@@ -2,12 +2,23 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import autobind from 'autobind-decorator';
+import { PropTypes } from 'prop-types';
 import Card from '../../components/Card/Card';
 import Loader from '../../components/Loader/Loader';
 import { fetchCards, removeCard, addCard } from '../../actions/cards';
 import './style.scss';
 
 class CardList extends Component {
+  static propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    cards: PropTypes.arrayOf(
+      PropTypes.shape({
+        data: PropTypes.arrayOf(Card),
+      }).isRequired,
+    ).isRequired,
+    cardsSelected: PropTypes.arrayOf(Card).isRequired,
+  };
+
   constructor(props) {
     super(props);
     this.state = {

@@ -6,37 +6,37 @@ import Card from './Card';
 import './style.scss';
 
 const cardSource = {
-    beginDrag(props) {
-        return {};
-    },
-    endDrag(props, monitor) {
-        // if target handled
-        if (!monitor.didDrop()) {
-            return;
-        }
-        // retrieve data from dest
-        const destResponse = monitor.getDropResult();
-        // dispatch request to move card from hand to board
-        if (destResponse.type === 'BOARD') {
-            props.dispatch(moveToBoard(props.card));
-        }
+  beginDrag() {
+    return {};
+  },
+  endDrag(props, monitor) {
+    // if target handled
+    if (!monitor.didDrop()) {
+      return;
     }
+    // retrieve data from dest
+    const destResponse = monitor.getDropResult();
+    // dispatch request to move card from hand to board
+    if (destResponse.type === 'BOARD') {
+      props.dispatch(moveToBoard(props.card));
+    }
+  },
 };
 
 function collect(connect, monitor) {
-    return {
-        connectDragSource: connect.dragSource(),
-        isDragging: monitor.isDragging(),
-    }
+  return {
+    connectDragSource: connect.dragSource(),
+    isDragging: monitor.isDragging(),
+  };
 }
 
 @DragSource('card', cardSource, collect)
 class DraggableCard extends Component {
-    render() {
-        const { connectDragSource } = this.props;
+  render() {
+    const { connectDragSource } = this.props;
 
-        return connectDragSource(<div><Card {...this.props} /></div>);
-    }
+    return connectDragSource(<div><Card {...this.props} /></div>);
+  }
 }
 
 export default connect()(DraggableCard);
