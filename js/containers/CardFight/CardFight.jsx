@@ -15,7 +15,6 @@ class CardFight extends Component {
   static propTypes = {
     cards: PropTypes.arrayOf(Card).isRequired,
     cardsSelected: PropTypes.arrayOf(Card).isRequired,
-    history: withRouter.propTypes.isRequired,
   };
 
   constructor(props) {

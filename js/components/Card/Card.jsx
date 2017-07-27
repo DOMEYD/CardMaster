@@ -4,7 +4,7 @@ import './style.scss';
 
 class Card extends PureComponent {
   static propTypes = {
-    card: PropTypes.Card.isRequired,
+    card: PropTypes.instanceOf(Card).isRequired,
     minimal: PropTypes.boolean,
   };
 
