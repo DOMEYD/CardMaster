@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DragSource } from 'react-dnd';
 import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
 import { moveToBoard } from '../../actions/cards';
 import Card from './Card';
 import './style.scss';
@@ -23,15 +24,19 @@ const cardSource = {
   },
 };
 
-function collect(connect, monitor) {
+function collect(conct, monitor) {
   return {
-    connectDragSource: connect.dragSource(),
+    connectDragSource: conct.dragSource(),
     isDragging: monitor.isDragging(),
   };
 }
 
 @DragSource('card', cardSource, collect)
 class DraggableCard extends Component {
+  static propTypes = {
+    connectDragSource: PropTypes.func.isRequired,
+  };
+
   render() {
     const { connectDragSource } = this.props;
 

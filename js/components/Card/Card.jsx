@@ -4,15 +4,24 @@ import './style.scss';
 
 class Card extends PureComponent {
   static propTypes = {
-    card: PropTypes.instanceOf(Card).isRequired,
-    minimal: PropTypes.boolean,
+    card: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
+      health: PropTypes.number.isRequired,
+      attq: PropTypes.number.isRequired,
+    }).isRequired,
+    minimal: PropTypes.bool,
+  };
+
+  static defaultProps = {
+    minimal: false,
   };
 
   render() {
     const { card, minimal } = this.props;
 
     return (<div className={`card${minimal ? ' small' : ''}`}>
-      <img src={card.img} className="figure" />
+      <img src={card.img} className="figure" alt={`figure ${card.name}`} />
       <span className="card-name">{ card.name }</span>
       <div className="card-infos">
         <span className="info card-cost"><img src="../../../img/money-bag.svg" className="picto" alt="Card value" />{ card.value }</span>

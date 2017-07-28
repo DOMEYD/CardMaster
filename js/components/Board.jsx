@@ -21,7 +21,12 @@ class Board extends Component {
   static propTypes = {
     connectDropTarget: PropTypes.func.isRequired,
     board: PropTypes.arrayOf(Card),
-  }
+  };
+
+  static defaultProps = {
+    board: null,
+  };
+
   render() {
     const { connectDropTarget, board } = this.props;
     return connectDropTarget(<section className="board">

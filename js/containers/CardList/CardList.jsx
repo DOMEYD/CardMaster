@@ -4,18 +4,15 @@ import { Link } from 'react-router-dom';
 import autobind from 'autobind-decorator';
 import { PropTypes } from 'prop-types';
 import Card from '../../components/Card/Card';
-import Loader from '../../components/Loader/Loader';
-import { fetchCards, removeCard, addCard } from '../../actions/cards';
+import { removeCard, addCard } from '../../actions/cards';
 import './style.scss';
 
 class CardList extends Component {
   static propTypes = {
     dispatch: PropTypes.func.isRequired,
-    cards: PropTypes.arrayOf(
-      PropTypes.shape({
-        data: PropTypes.arrayOf(Card),
-      }).isRequired,
-    ).isRequired,
+    cards: PropTypes.shape({
+      data: PropTypes.array.isRequired,
+    }).isRequired,
     cardsSelected: PropTypes.arrayOf(Card).isRequired,
   };
 
@@ -23,40 +20,49 @@ class CardList extends Component {
     super(props);
     this.state = {
       filter: {
-        ammounts: [],
+        amounts: [],
       },
     };
   }
-  componentWillMount() {
-    this.props.dispatch(fetchCards());
-  }
 
+  /**
+   * Set filter for cards
+   * @param e
+   */
   @autobind
   filterCards(e) {
-    const index = this.state.filter.ammounts.indexOf(e.currentTarget.value);
+    const { ammounts } = this.state.filter.amounts;
+    const index = ammounts.indexOf(e.currentTarget.value);
     if (index > -1) {
+      // suppress item
       this.setState({
         filter: {
-          ammounts: this.state.filter.ammounts.slice(0, index).concat(this.state.filter.ammounts.slice(index + 1)),
+          amounts: [
+            ...ammounts.slice(0, index),
+            ...ammounts.slice(index + 1),
+          ],
         },
       });
     } else {
+      // add item
       this.setState({
         filter: {
-          ammounts: [...this.state.filter.ammounts, e.currentTarget.value],
+          amounts: [...ammounts, e.currentTarget.value],
         },
       });
     }
   }
 
+  /**
+   * Return card
+   * if filter set, return only filtered cards
+   */
   cards = () => {
     let cards = this.props.cards.data;
-    const { ammounts } = this.state.filter;
+    const { amounts } = this.state.filter;
 
-    if (ammounts.length > 0) {
-      cards = cards.filter((card) => {
-        return ammounts.indexOf(card.value ? card.value.toString() : '0') > -1;
-      });
+    if (amounts.length > 0) {
+      cards = cards.filter(card => amounts.indexOf(card.value ? card.value.toString() : '0') > -1);
     }
 
     return cards;
@@ -73,15 +79,13 @@ class CardList extends Component {
   }
 
   render() {
-    const { cards } = this.props;
-    if (cards.isFetching) {
-      return <Loader />;
-    }
     return (<div className="card-list-container">
       <ul className="card-list">
         { this.cards().map(card => (
-          <li key={card.name} onClick={() => this.toggleCardSelection(card)}>
-            <Card card={card} />
+          <li key={card.name}>
+            <a href="#" onClick={() => this.toggleCardSelection(card)}>
+              <Card card={card} />
+            </a>
           </li>
         )) }
       </ul>
@@ -90,8 +94,8 @@ class CardList extends Component {
           <header>Filter</header>
           <div>
             {(new Array(9)).fill(0).map((k, i) => (
-              <label key={i + 1}>
-                <input type="checkbox" name="value" value={i + 1} onChange={this.filterCards} />
+              <label key={`value${i + 1}`} htmlFor={`value${i + 1}`}>
+                <input type="checkbox" name="value" id={`value${i + 1}`} value={i + 1} onChange={this.filterCards} />
                 {i + 1}
               </label>
             ))}
@@ -100,8 +104,10 @@ class CardList extends Component {
         <section className="selected-cards">
           <ul>
             { this.props.cardsSelected.map(selected => (
-              <li key={selected.name} onClick={() => this.removeCardFromSelection(selected)}>
-                <Card card={selected} minimal />
+              <li key={selected.name}>
+                <a href="#" onClick={() => this.removeCardFromSelection(selected)}>
+                  <Card card={selected} minimal />
+                </a>
               </li>
             )) }
           </ul>
