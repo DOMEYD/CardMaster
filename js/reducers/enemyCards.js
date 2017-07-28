@@ -10,21 +10,20 @@ export default (state = defaultValue, action) => {
       const searchedCardIndex = state.data.indexOf(action.card);
       const searchedCard = state.data[searchedCardIndex];
       searchedCard.health -= action.amount;
-      // if died, suppress from enemy hand
-      if (searchedCard.health <= 0) {
-        return Object.assign({}, state, {
-          data: [
-            ...state.data.slice(0, searchedCardIndex),
-            ...state.data.slice(searchedCardIndex + 1),
-          ],
-        });
-      }
-      // else return hand with less life card
+      // return hand with less life card
       return Object.assign({}, state, {
         data: [
           ...state.data.slice(0, searchedCardIndex),
           Object.assign({}, searchedCard),
           ...state.data.slice(searchedCardIndex + 1),
+        ],
+      });
+    case 'ENEMY_DIED':
+      const index = state.data.indexOf(action.card);
+      return Object.assign({}, state, {
+        data: [
+          ...state.data.slice(0, index),
+          ...state.data.slice(index + 1),
         ],
       });
     default:
