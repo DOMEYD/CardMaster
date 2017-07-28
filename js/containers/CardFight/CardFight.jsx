@@ -12,9 +12,6 @@ import './style.scss';
 @DragDropContext(HTML5Backend)
 class CardFight extends Component {
   static propTypes = {
-    cards: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string.isRequired,
-    })).isRequired,
     cardsSelected: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string.isRequired,
     })).isRequired,

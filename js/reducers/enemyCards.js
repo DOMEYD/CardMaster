@@ -8,6 +8,9 @@ export default (state = defaultValue, action) => {
   switch (action.type) {
     case 'ENEMY_LOOSE_LIFE':
       const searchedCardIndex = state.data.indexOf(action.card);
+      if (searchedCardIndex === -1) {
+        return state;
+      }
       const searchedCard = state.data[searchedCardIndex];
       searchedCard.health -= action.amount;
       // return hand with less life card
@@ -20,6 +23,9 @@ export default (state = defaultValue, action) => {
       });
     case 'ENEMY_DIED':
       const index = state.data.indexOf(action.card);
+      if (index === -1) {
+        return state;
+      }
       return Object.assign({}, state, {
         data: [
           ...state.data.slice(0, index),

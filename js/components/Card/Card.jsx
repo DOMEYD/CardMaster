@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
-import { diedCard } from '../../actions/cards';
 import { connect } from 'react-redux';
+import { diedCard } from '../../actions/cards';
 import './style.scss';
 
 class Card extends PureComponent {
@@ -23,7 +23,7 @@ class Card extends PureComponent {
   componentWillUpdate(newProps) {
     const { dispatch } = this.props;
     if (newProps.card.health <= 0) {
-      setTimeout(() => dispatch(diedCard()), 200);
+      setTimeout(() => dispatch(diedCard(newProps.card)), 200);
     }
   }
 
