@@ -12,7 +12,7 @@ const cardSource = {
   },
   endDrag(props, monitor) {
     // if target handled
-    if (!monitor.didDrop()) {
+    if (!monitor.didDrop() || props.card.isOnboard) {
       return;
     }
     // retrieve data from dest
