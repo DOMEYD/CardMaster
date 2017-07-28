@@ -34,7 +34,11 @@ function collect(conct, monitor) {
 @DragSource('card', cardSource, collect)
 class DraggableCard extends Component {
   static propTypes = {
-    connectDragSource: PropTypes.func.isRequired,
+    connectDragSource: PropTypes.func,
+  };
+
+  static defaultProps = {
+    connectDragSource: null,
   };
 
   render() {

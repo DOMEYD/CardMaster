@@ -13,9 +13,13 @@ import './style.scss';
 @DragDropContext(HTML5Backend)
 class CardFight extends Component {
   static propTypes = {
-    cards: PropTypes.arrayOf(Card).isRequired,
-    cardsSelected: PropTypes.arrayOf(Card).isRequired,
-    history: PropTypes.objectOf({
+    cards: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    })).isRequired,
+    cardsSelected: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+    })).isRequired,
+    history: PropTypes.shape({
       push: PropTypes.func.isRequired,
     }).isRequired,
   };
@@ -23,7 +27,7 @@ class CardFight extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      enemyHand: shuffle(props.cards.data, { copy: true }).slice(0, 5),
+      enemyHand: shuffle(props.cards, { copy: true }).slice(0, 5),
     };
   }
   componentDidMount() {
@@ -49,7 +53,7 @@ class CardFight extends Component {
 function mapStateToProps(state) {
   return {
     cardsSelected: state.cardsSelected,
-    cards: state.cards,
+    cards: state.cards.data,
   };
 }
 

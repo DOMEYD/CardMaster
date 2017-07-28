@@ -13,7 +13,7 @@ class CardList extends Component {
     cards: PropTypes.shape({
       data: PropTypes.array.isRequired,
     }).isRequired,
-    cardsSelected: PropTypes.arrayOf(Card).isRequired,
+    cardsSelected: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
   };
 
   constructor(props) {

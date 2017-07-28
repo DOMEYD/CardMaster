@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { DropTarget } from 'react-dnd';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Card from './Card/Card';
+import DraggableCard from './Card/DraggableCard';
 
 const boardTarget = {
   drop() {
@@ -19,18 +19,21 @@ const boardTarget = {
 }))
 class Board extends Component {
   static propTypes = {
-    connectDropTarget: PropTypes.func.isRequired,
-    board: PropTypes.arrayOf(Card),
+    connectDropTarget: PropTypes.func,
+    board: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+    })),
   };
 
   static defaultProps = {
     board: null,
+    connectDropTarget: null,
   };
 
   render() {
     const { connectDropTarget, board } = this.props;
     return connectDropTarget(<section className="board">
-      {board ? board.map(card => <Card key={card.name} card={card} />) : null}
+      {board ? board.map(card => <DraggableCard key={card.name} card={card} />) : null}
     </section>);
   }
 }
