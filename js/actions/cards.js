@@ -19,3 +19,11 @@ export const moveToBoard = card => (dispatch) => {
     card,
   });
 };
+
+export const fightCard = (fighter, defender) => (dispatch) => {
+  dispatch({
+    type: 'ENEMY_LOOSE_LIFE',
+    card: defender,
+    amount: fighter.attq,
+  });
+};

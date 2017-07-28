@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { DragSource } from 'react-dnd';
 import { connect } from 'react-redux';
 import { PropTypes } from 'prop-types';
-import { moveToBoard } from '../../actions/cards';
+import { fightCard, moveToBoard } from '../../actions/cards';
 import Card from './Card';
 import './style.scss';
 
@@ -12,11 +12,22 @@ const cardSource = {
   },
   endDrag(props, monitor) {
     // if target handled
-    if (!monitor.didDrop() || props.card.isOnboard) {
+    if (!monitor.didDrop()) {
       return;
     }
+
     // retrieve data from dest
     const destResponse = monitor.getDropResult();
+
+    // if card already on board,
+    // and attack another card
+    if (props.card.isOnboard) {
+      if (destResponse.type === 'ENEMY') {
+        props.dispatch(fightCard(props.card, destResponse.card));
+      }
+      return;
+    }
+
     // dispatch request to move card from hand to board
     if (destResponse.type === 'BOARD') {
       props.dispatch(moveToBoard(props.card));
