@@ -1,7 +1,18 @@
+@import 'mixins';
+
 body {
   background: lightblue url(https://www.warnerbros.com/sites/default/files/lego_batman_background1.jpg) no-repeat fixed center center;
   background-size: cover;
 
+  margin: 0;
+  padding: 0;
+
+  @include breakpoint(xs) {
+    padding: 1rem;
+  }
+}
+
+ul {
   margin: 0;
   padding: 0;
 }

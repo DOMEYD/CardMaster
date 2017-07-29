@@ -1,3 +1,5 @@
+@import '~Style/mixins';
+
 .card-list-container {
   display: flex;
 
@@ -52,6 +54,31 @@
       padding: 1rem;
       color: black;
       text-decoration: none;
+    }
+  }
+
+  @include breakpoint(xs) {
+    display: initial;
+
+    .card-list {
+      min-width: 100%;
+
+      li {
+        width: 100%;
+      }
+    }
+
+    aside {
+      .selected-cards {
+        display: none;
+      }
+
+      .fight-btn {
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        box-shadow: 0 0 5px black;
+      }
     }
   }
 }
