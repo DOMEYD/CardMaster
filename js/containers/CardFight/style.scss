@@ -6,10 +6,6 @@
   height: 100vh;
   overflow: hidden;
 
-  @include breakpoint(xs) {
-    height: calc(100vh - 2 * 1rem);
-  }
-
   .enemy-board {
     display: flex;
     height: 20vh;
@@ -28,6 +24,10 @@
     align-items: center;
     height: 60vh;
     justify-content: center;
+
+    @include breakpoint(xs) {
+      display: initial;
+    }
   }
 
   .hand {
@@ -79,5 +79,9 @@
         }
       }
     }
+  }
+
+  @include breakpoint(xs) {
+    height: calc(100vh - 2 * 1rem);
   }
 }

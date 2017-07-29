@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { DragDropContext } from 'react-dnd';
-import HTML5Backend from 'react-dnd-html5-backend';
+import TouchBackend from 'react-dnd-touch-backend';
 import { PropTypes } from 'prop-types';
 import DraggableCard from '../../components/Card/DraggableCard';
 import Board from '../../components/Board';
 import EnemyCard from '../../components/Card/EnemyCard';
 import './style.scss';
 
-@DragDropContext(HTML5Backend)
+@DragDropContext(TouchBackend({ enableMouseEvents: true }))
 class CardFight extends Component {
   static propTypes = {
     cardsSelected: PropTypes.arrayOf(PropTypes.shape({
