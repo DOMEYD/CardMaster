@@ -1,8 +1,14 @@
+@import '~Style/mixins';
+
 .fight {
   display: flex;
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
+
+  @include breakpoint(xs) {
+    height: calc(100vh - 2 * 1rem);
+  }
 
   .enemy-board {
     display: flex;
@@ -54,6 +60,23 @@
 
       .card-name {
         font-size: 0.9rem;
+      }
+    }
+
+    @include breakpoint(xs) {
+      .card {
+        display: block;
+
+        .card-infos {
+          > .info {
+            font-size: 0.8em;
+
+            .picto {
+              max-width: 0.5rem;
+              vertical-align: middle;
+            }
+          }
+        }
       }
     }
   }
