@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
+import Modal from 'react-modal';
 import { diedCard } from '../../actions/cards';
 import './style.scss';
 
@@ -22,6 +23,13 @@ class Card extends PureComponent {
     selected: false,
   };
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      modal: false,
+    };
+  }
+
   componentWillUpdate(newProps) {
     const { dispatch } = this.props;
     if (newProps.card.health <= 0) {
@@ -40,6 +48,22 @@ class Card extends PureComponent {
         <span className="info card-health"><img src="../../../img/if_heart_299063.svg" className="picto" alt="Card health" />{ card.health }</span>
         <span className="info card-attq"><img src="../../../img/gaming.svg" className="picto" alt="Card attack" />{ card.attq }</span>
       </div>
+      <a href="#" onClick={() => this.setState({ modal: true })}>
+        show details
+      </a>
+      {this.state.modal ? <Modal
+        isOpen={this.state.modal}
+        onRequestClose={() => this.setState({ modal: false })}
+        style={{
+          content: {
+            maxWidth: '50vw',
+            height: 'auto',
+            margin: 'auto',
+          },
+        }}
+      >
+        <h2>{card.name}</h2>
+      </Modal> : null}
     </div>);
   }
 }
