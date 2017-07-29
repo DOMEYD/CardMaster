@@ -13,11 +13,13 @@ class Card extends PureComponent {
       attq: PropTypes.number.isRequired,
     }).isRequired,
     minimal: PropTypes.bool,
+    selected: PropTypes.bool,
     dispatch: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
     minimal: false,
+    selected: false,
   };
 
   componentWillUpdate(newProps) {
@@ -28,9 +30,9 @@ class Card extends PureComponent {
   }
 
   render() {
-    const { card, minimal } = this.props;
+    const { card, minimal, selected } = this.props;
 
-    return (<div className={`card${minimal ? ' small' : ''}${card.health <= 0 ? ' died' : ''}`}>
+    return (<div className={`card${minimal ? ' small' : ''}${card.health <= 0 ? ' died' : ''}${selected ? ' selected' : ''}`}>
       <img src={card.img} className="figure" alt={`figure ${card.name}`} />
       <span className="card-name">{ card.name }</span>
       <div className="card-infos">

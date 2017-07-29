@@ -44,6 +44,10 @@
     margin-right: 3px;
   }
 
+  &:hover {
+    box-shadow: 0 0 10px black;
+  }
+
   @mixin small-card {
     display: flex;
     margin: 0.5rem 0;
@@ -68,6 +72,12 @@
     .info {
       align-self: center;
     }
+
+    &.selected {
+      opacity: 0.7;
+      transform: scale(0.95);
+      box-shadow: 0 0 10px grey;
+    }
   }
 
   &.small {
@@ -76,10 +86,6 @@
 
   @include breakpoint(xs) {
     @include small-card;
-  }
-
-  &:hover {
-    box-shadow: 0 0 10px black;
   }
 
   &.died {

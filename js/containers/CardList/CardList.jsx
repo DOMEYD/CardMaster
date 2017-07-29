@@ -79,18 +79,22 @@ class CardList extends Component {
   }
 
   render() {
+    const { cardsSelected } = this.props;
     return (<div className="card-list-container">
       <ul className="card-list">
         { this.cards().map(card => (
           <li key={card.name}>
             <a href="#" onClick={() => this.toggleCardSelection(card)}>
-              <Card card={card} />
+              <Card
+                card={card}
+                selected={cardsSelected.indexOf(card) !== -1}
+              />
             </a>
           </li>
         )) }
       </ul>
       <aside>
-        <section>
+        <section className="filters">
           <header>Filter</header>
           <div>
             {(new Array(9)).fill(0).map((k, i) => (

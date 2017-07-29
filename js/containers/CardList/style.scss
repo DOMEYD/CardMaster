@@ -69,6 +69,12 @@
     }
 
     aside {
+      height: auto;
+
+      .filters {
+        display: none;
+      }
+
       .selected-cards {
         display: none;
       }
