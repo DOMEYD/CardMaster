@@ -21,10 +21,12 @@ class EnemyCard extends Component {
   static propTypes = {
     card: PropTypes.shape().isRequired,
     connectDropTarget: PropTypes.func,
+    isOver: PropTypes.bool,
   };
 
   static defaultProps = {
     connectDropTarget: null,
+    isOver: false,
   };
 
   render() {
