@@ -1,11 +1,9 @@
 @import '~Style/mixins';
 
 .card-list-container {
-  display: flex;
-
   .card-list {
+    width: 65vw;
     list-style: none;
-    flex: 2;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -19,7 +17,10 @@
   }
 
   aside {
-    flex: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     height: 100vh;
