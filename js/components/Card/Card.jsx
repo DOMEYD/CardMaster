@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 import Modal from 'react-modal';
+import autobind from 'autobind-decorator';
 import { diedCard } from '../../actions/cards';
 import './style.scss';
 
@@ -37,6 +38,13 @@ class Card extends PureComponent {
     }
   }
 
+  @autobind
+  openMore(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    this.setState({ modal: true });
+  }
+
   render() {
     const { card, minimal, selected } = this.props;
 
@@ -48,21 +56,30 @@ class Card extends PureComponent {
         <span className="info card-health"><img src="../../../img/if_heart_299063.svg" className="picto" alt="Card health" />{ card.health }</span>
         <span className="info card-attq"><img src="../../../img/gaming.svg" className="picto" alt="Card attack" />{ card.attq }</span>
       </div>
-      <a href="#" onClick={() => this.setState({ modal: true })}>
+
+      <button className="more" onClick={this.openMore}>
         show details
-      </a>
+      </button>
+
       {this.state.modal ? <Modal
         isOpen={this.state.modal}
         onRequestClose={() => this.setState({ modal: false })}
-        style={{
-          content: {
-            maxWidth: '50vw',
-            height: 'auto',
-            margin: 'auto',
-          },
-        }}
+        className="card-modal"
+        contentLabel="card data"
       >
-        <h2>{card.name}</h2>
+        <h2 className="card-name">{card.name}</h2>
+        <p className="info card-cost">
+          <img src="../../../img/money-bag.svg" className="picto" alt="Card value" />
+          { card.value }
+        </p>
+        <p className="info card-health">
+          <img src="../../../img/if_heart_299063.svg" className="picto" alt="Card health" />
+          { card.health }
+        </p>
+        <p className="info card-attq">
+          <img src="../../../img/gaming.svg" className="picto" alt="Card attack" />
+          { card.attq }
+        </p>
       </Modal> : null}
     </div>);
   }

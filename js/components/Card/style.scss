@@ -44,6 +44,17 @@
     margin-right: 3px;
   }
 
+  .more {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0 0;
+    text-align: center;
+  }
+
   &:hover {
     box-shadow: 0 0 10px black;
   }
@@ -78,6 +89,10 @@
       transform: scale(0.95);
       box-shadow: 0 0 10px grey;
     }
+
+    .more {
+      display: none;
+    }
   }
 
   &.small {
@@ -91,6 +106,24 @@
   &.died {
     transform: scale(0);
     transition: transform 200ms;
+  }
+}
+
+.card-modal {
+  background-color: white;
+  padding: 1rem;
+  max-width: 50vw;
+  height: auto;
+  margin: auto;
+
+  .card-name {
+    text-align: center;
+  }
+
+  .info {
+    .picto {
+      max-width: 1rem;
+    }
   }
 }
 
