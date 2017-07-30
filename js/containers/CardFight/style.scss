@@ -19,17 +19,6 @@
     }
   }
 
-  .board {
-    display: flex;
-    align-items: center;
-    height: 60vh;
-    justify-content: center;
-
-    @include breakpoint(xs) {
-      display: initial;
-    }
-  }
-
   .hand {
     display: flex;
     align-items: center;

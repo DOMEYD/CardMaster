@@ -3,6 +3,7 @@ import { DropTarget } from 'react-dnd';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import DraggableCard from './Card/DraggableCard';
+import './style.scss';
 
 const boardTarget = {
   drop() {
@@ -23,16 +24,18 @@ class Board extends Component {
     board: PropTypes.arrayOf(PropTypes.shape({
       name: PropTypes.string,
     })),
+    isOver: PropTypes.bool,
   };
 
   static defaultProps = {
     board: null,
+    isOver: false,
     connectDropTarget: null,
   };
 
   render() {
-    const { connectDropTarget, board } = this.props;
-    return connectDropTarget(<section className="board">
+    const { connectDropTarget, board, isOver } = this.props;
+    return connectDropTarget(<section className={`board ${isOver ? ' over' : ''}`}>
       {board ? board.map(card => <DraggableCard key={card.name} card={card} />) : null}
     </section>);
   }
