@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { DropTarget } from 'react-dnd';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import DraggableCard from './Card/DraggableCard';
 import NotificationSystem from 'react-notification-system';
+import DraggableCard from './Card/DraggableCard';
 import './style.scss';
 
 const boardTarget = {

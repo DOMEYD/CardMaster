@@ -25,6 +25,65 @@
     padding: 1rem;
     box-sizing: border-box;
 
+    .filters {
+      text-align: center;
+
+      .filter {
+        position: relative;
+        display: inline-block;
+        width: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 0 5px 0.5rem;
+        font-family: "Patrick Hand", Helvetica, serif;
+        color: black;
+
+        input[type="checkbox"] {
+          display: none;
+
+          &:checked + span::after {
+            filter: grayscale(0);
+          }
+        }
+
+        span::after {
+          content: '';
+          background-repeat: no-repeat;
+          background-size: 100%;
+          display: inline-block;
+          width: 2rem;
+          height: 2rem;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          filter: grayscale(100%) brightness(100);
+          transition: filter 200ms;
+          opacity: 0.8;
+        }
+
+        &.filter-amounts {
+          span::after {
+            background-image: url('../../../img/money-bag.svg');
+          }
+        }
+
+        &.filter-health {
+          span::after {
+            background-image: url('../../../img/if_heart_299063.svg');
+          }
+        }
+
+        &.filter-attq {
+          span::after {
+            background-image: url('../../../img/gaming.svg');
+          }
+        }
+      }
+    }
+
     .selected-cards {
       flex: 1;
       overflow-y: auto;

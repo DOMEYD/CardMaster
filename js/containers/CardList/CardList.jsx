@@ -21,6 +21,8 @@ class CardList extends Component {
     this.state = {
       filter: {
         amounts: [],
+        health: [],
+        attq: [],
       },
     };
   }
@@ -31,24 +33,29 @@ class CardList extends Component {
    */
   @autobind
   filterCards(e) {
-    const { ammounts } = this.state.filter.amounts;
-    const index = ammounts.indexOf(e.currentTarget.value);
+    const filterName = e.currentTarget.name;
+    if (!['amounts', 'health', 'attq'].indexOf(filterName)) {
+      // Prevent add not handled filter
+      return;
+    }
+    const filter = this.state.filter[filterName];
+    const index = filter.indexOf(e.currentTarget.value);
     if (index > -1) {
       // suppress item
       this.setState({
-        filter: {
-          amounts: [
-            ...ammounts.slice(0, index),
-            ...ammounts.slice(index + 1),
+        filter: Object.assign({}, this.state.filter, {
+          [filterName]: [
+            ...filter.slice(0, index),
+            ...filter.slice(index + 1),
           ],
-        },
+        }),
       });
     } else {
       // add item
       this.setState({
-        filter: {
-          amounts: [...ammounts, e.currentTarget.value],
-        },
+        filter: Object.assign({}, this.state.filter, {
+          [filterName]: [...filter, e.currentTarget.value],
+        }),
       });
     }
   }
@@ -58,14 +65,21 @@ class CardList extends Component {
    * if filter set, return only filtered cards
    */
   cards = () => {
-    let cards = this.props.cards.data;
-    const { amounts } = this.state.filter;
+    const cards = this.props.cards.data;
+    const { amounts, health, attq } = this.state.filter;
 
-    if (amounts.length > 0) {
-      cards = cards.filter(card => amounts.indexOf(card.value ? card.value.toString() : '0') > -1);
-    }
-
-    return cards;
+    return cards.filter((card) => {
+      if (amounts.length > 0 && amounts.indexOf(card.value ? card.value.toString() : '0') === -1) {
+        return false;
+      }
+      if (health.length > 0 && health.indexOf(card.health ? card.health.toString() : '0') === -1) {
+        return false;
+      }
+      if (attq.length > 0 && attq.indexOf(card.attq ? card.attq.toString() : '0') === -1) {
+        return false;
+      }
+      return true;
+    });
   }
 
   @autobind
@@ -95,12 +109,27 @@ class CardList extends Component {
       </ul>
       <aside>
         <section className="filters">
-          <header>Filter</header>
           <div>
             {(new Array(9)).fill(0).map((k, i) => (
-              <label key={`value${i + 1}`} htmlFor={`value${i + 1}`}>
-                <input type="checkbox" name="value" id={`value${i + 1}`} value={i + 1} onChange={this.filterCards} />
-                {i + 1}
+              <label key={`value${i + 1}`} htmlFor={`amounts${i + 1}`} className="filter filter-amounts">
+                <input type="checkbox" name="amounts" id={`amounts${i + 1}`} value={i + 1} onChange={this.filterCards} />
+                <span>{i + 1}</span>
+              </label>
+            ))}
+          </div>
+          <div>
+            {(new Array(9)).fill(0).map((k, i) => (
+              <label key={`value${i + 1}`} htmlFor={`health${i + 1}`} className="filter filter-health">
+                <input type="checkbox" name="health" id={`health${i + 1}`} value={i + 1} onChange={this.filterCards} />
+                <span>{i + 1}</span>
+              </label>
+            ))}
+          </div>
+          <div>
+            {(new Array(9)).fill(0).map((k, i) => (
+              <label key={`value${i + 1}`} htmlFor={`attq${i + 1}`} className="filter filter-attq">
+                <input type="checkbox" name="attq" id={`attq${i + 1}`} value={i + 1} onChange={this.filterCards} />
+                <span>{i + 1}</span>
               </label>
             ))}
           </div>
