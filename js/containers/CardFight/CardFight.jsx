@@ -34,11 +34,15 @@ class CardFight extends Component {
 
     return (<main className="fight">
       <section className="enemy-board">
-        { enemyCards ? enemyCards.map(card => <EnemyCard key={`enemy${card.name}`} card={card} />) : null }
+        { enemyCards ? enemyCards.map((card, k) => (
+          <EnemyCard key={`enemy${card.name}`} card={card} taunt={k === 0} />
+        )) : null }
       </section>
       <Board />
       <section className="hand">
-        { this.props.cardsSelected.slice(0, 5).map(card => <DraggableCard key={`myHand${card.name}`} card={card} />) }
+        { this.props.cardsSelected.slice(0, 5).map((card, k) => (
+          <DraggableCard key={`myHand${card.name}`} card={card} taunt={k === 0} />
+        )) }
       </section>
     </main>);
   }

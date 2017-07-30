@@ -17,17 +17,23 @@ class Card extends PureComponent {
     minimal: PropTypes.bool,
     selected: PropTypes.bool,
     dispatch: PropTypes.func.isRequired,
+    taunt: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.bool,
+    ]),
   };
 
   static defaultProps = {
     minimal: false,
     selected: false,
+    taunt: false,
   };
 
   constructor(props) {
     super(props);
     this.state = {
       modal: false,
+      taunt: props.taunt,
     };
   }
 
@@ -61,6 +67,8 @@ class Card extends PureComponent {
         <span className="info card-health"><img src="../../../img/if_heart_299063.svg" className="picto" alt="Card health" />{ card.health }</span>
         <span className="info card-attq"><img src="../../../img/gaming.svg" className="picto" alt="Card attack" />{ card.attq }</span>
       </div>
+
+      { this.state.taunt ? <div className="taunt">{card.taunt}</div> : null }
 
       <button className="more" onClick={this.openMore} />
 

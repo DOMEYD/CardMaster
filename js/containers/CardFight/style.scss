@@ -6,19 +6,6 @@
   height: 100vh;
   overflow: hidden;
 
-  .enemy-board {
-    display: flex;
-    height: 20vh;
-
-    .card {
-      cursor: not-allowed;
-
-      &:hover {
-        box-shadow: inherit;
-      }
-    }
-  }
-
   .hand {
     display: flex;
     align-items: center;
@@ -38,6 +25,16 @@
   .hand,
   .enemy-board {
     justify-content: center;
+
+
+    // @todo: change this, not proper but needed because of React DND
+    & > div {
+      &:first-of-type {
+        .card {
+          z-index: 1;
+        }
+      }
+    }
 
     .card {
       width: calc(5vh + 2rem);
@@ -63,6 +60,11 @@
         font-size: 0.7rem;
       }
 
+      .taunt {
+        top: -30%;
+        width: 150%;
+      }
+
     }
 
     @include breakpoint(xs) {
@@ -79,6 +81,29 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .enemy-board {
+    display: flex;
+    height: 20vh;
+
+    .card {
+      cursor: not-allowed;
+
+      .taunt {
+        animation-delay: 2.5s;
+        top: 50%;
+
+        &::after {
+          top: -5px;
+          bottom: auto;
+        }
+      }
+
+      &:hover {
+        box-shadow: inherit;
       }
     }
   }
