@@ -41,6 +41,7 @@
 
     .card {
       width: calc(5vh + 2rem);
+      height: calc(20vh - 4rem);
 
       .figure {
         max-width: 5vh;
@@ -49,6 +50,7 @@
 
       .card-name {
         font-size: 0.9rem;
+        margin: 0.5rem 0;
       }
 
       .picto {

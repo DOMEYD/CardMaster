@@ -28,8 +28,8 @@ class EnemyCard extends Component {
   };
 
   render() {
-    const { connectDropTarget } = this.props;
-    return connectDropTarget(<div><Card card={this.props.card} /></div>);
+    const { connectDropTarget, isOver } = this.props;
+    return connectDropTarget(<div className={`enemy-card${isOver ? ' over' : ''}`}><Card card={this.props.card} /></div>);
   }
 }
 

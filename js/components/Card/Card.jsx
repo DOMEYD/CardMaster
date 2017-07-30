@@ -57,9 +57,7 @@ class Card extends PureComponent {
         <span className="info card-attq"><img src="../../../img/gaming.svg" className="picto" alt="Card attack" />{ card.attq }</span>
       </div>
 
-      <button className="more" onClick={this.openMore}>
-        show details
-      </button>
+      <button className="more" onClick={this.openMore}/>
 
       {this.state.modal ? <Modal
         isOpen={this.state.modal}

@@ -9,6 +9,7 @@
   max-width: 150px;
   cursor: pointer;
   transition: box-shadow 200ms ease;
+  position: relative;
 
   .figure {
     display: block;
@@ -45,14 +46,27 @@
   }
 
   .more {
+    position: absolute;
+    top: -0.8rem;
+    right: -1.2rem;
     background: transparent;
     border: 0;
     outline: 0;
     cursor: pointer;
-    display: block;
-    width: 100%;
-    margin: 0.5rem 0 0;
     text-align: center;
+
+    &::after {
+      content: 'i';
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: white;
+      border-radius: 50%;
+      font-family: "Patrick Hand", Helvetica, serif;
+      font-weight: bold;
+      line-height: 1.5rem;
+      box-shadow: 0 0 2px black;
+    }
   }
 
   &:hover {
@@ -133,5 +147,22 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.enemy-card {
+  position: relative;
+
+  &.over {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.2) url('../../../img/gaming.svg') no-repeat center;
+      background-size: 30%;
+    }
   }
 }
