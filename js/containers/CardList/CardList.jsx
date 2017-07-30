@@ -98,7 +98,7 @@ class CardList extends Component {
       <ul className="card-list">
         { this.cards().map(card => (
           <li key={card.name}>
-            <a href="#" onClick={() => this.toggleCardSelection(card)}>
+            <a href="#" onClick={() => cardsSelected.indexOf(card) === -1 && this.toggleCardSelection(card)}>
               <Card
                 card={card}
                 selected={cardsSelected.indexOf(card) !== -1}
