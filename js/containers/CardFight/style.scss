@@ -6,22 +6,6 @@
   height: 100vh;
   overflow: hidden;
 
-  .hand {
-    display: flex;
-    align-items: center;
-    height: 20vh;
-
-    .card {
-      transform: translateY(50%);
-      transition: transform 250ms ease;
-      cursor: move;
-
-      &:hover {
-        transform: translateY(0);
-      }
-    }
-  }
-
   .hand,
   .enemy-board {
     justify-content: center;
@@ -61,7 +45,6 @@
       }
 
       .taunt {
-        top: -30%;
         width: 150%;
       }
 
@@ -94,7 +77,8 @@
 
       .taunt {
         animation-delay: 2.5s;
-        top: 50%;
+        top: 55%;
+        bottom: auto;
 
         &::after {
           top: -5px;
@@ -104,6 +88,26 @@
 
       &:hover {
         box-shadow: inherit;
+      }
+    }
+  }
+
+  .hand {
+    display: flex;
+    align-items: center;
+    height: 20vh;
+
+    .card {
+      transform: translateY(50%);
+      transition: transform 250ms ease;
+      cursor: move;
+
+      &:hover {
+        transform: translateY(0);
+      }
+
+      @include breakpoint(xs) {
+        transform: translateY(0);
       }
     }
   }
