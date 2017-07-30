@@ -62,7 +62,7 @@ class Card extends PureComponent {
         <span className="info card-attq"><img src="../../../img/gaming.svg" className="picto" alt="Card attack" />{ card.attq }</span>
       </div>
 
-      <button className="more" onClick={this.openMore}/>
+      <button className="more" onClick={this.openMore} />
 
       {this.state.modal ? <Modal
         isOpen={this.state.modal}
@@ -73,20 +73,26 @@ class Card extends PureComponent {
         <h2 className="card-name">{card.name} ({card.type})</h2>
         <div className="card-infos">
           <p className="info card-cost">
-            { (new Array(card.value)).fill(0).map(() => (
-              <img src="../../../img/money-bag.svg" className="picto" alt="Card value" />
+            { (new Array(card.value)).fill(0).map((_, i) => (
+              <img src="../../../img/money-bag.svg" key={`card-value-${i.toString()}`} className="picto" alt="Card value" />
             )) }
           </p>
           <p className="info card-health">
-            { (new Array(card.health)).fill(0).map(() => (
-              <img src="../../../img/if_heart_299063.svg" className="picto" alt="Card value" />
+            { (new Array(card.health)).fill(0).map((_, i) => (
+              <img src="../../../img/if_heart_299063.svg" key={`card-health-${i.toString()}`} className="picto" alt="Card health" />
             )) }
           </p>
           <p className="info card-attq">
-            { (new Array(card.attq)).fill(0).map(() => (
-              <img src="../../../img/gaming.svg" className="picto" alt="Card value" />
+            { (new Array(card.attq)).fill(0).map((_, i) => (
+              <img src="../../../img/gaming.svg" key={`card-attack-${i.toString()}`} className="picto" alt="Card attack" />
             )) }
           </p>
+        </div>
+        <p>
+          { card.taunt }
+        </p>
+        <div className="card-description">
+          { card.description.split('\n').map((item, k) => <p key={k.toString()}>{ item }</p>) }
         </div>
       </Modal> : null}
     </div>);

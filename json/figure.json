@@ -6,7 +6,9 @@
       "health": 7,
       "attq": 5,
       "img": "img/figures/336x448_BattleDwarf.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« Cinq trolls en colère et un géant des roches ? Ha ! C’est tout ce que t’as ? »",
+      "description": "Le nain de combat est un guerrier redoutable du Clan des Sangliers, une courageuse et noble famille renommée dans le monde entier pour son expertise en forgeage du fer. Il porte sa hache, Lardeuse, qu’il a fabriqué lui-même, et le légendaire marteau de guerre nommé Pressegroins et rendu célèbre par sa capacité à aplatir les ennemis avec la force d’un razorback en pleine charge.\n      Le nain de combat est aussi loyal envers ses amis que féroce au combat, bien que ces claques amicales risquent de vous envoyer valser autant qu’un coup de son marteau. Le tatouage sur son épaule raconte comment il a un jour fait face à un dragon de mer au souffle enflammé. Il n’est pas parvenu à le tuer ni rien, mais le simple fait de s’en sortir en un morceau est déjà un acte héroïque en soi. En plus, le combat lui a laissé une super coupe de cheveux !"
     },
     {
       "name": "Bruce Wayne",
@@ -14,7 +16,9 @@
       "health": 5,
       "attq": 6,
       "img": "img/figures/336x448_Brucewayne.png",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Je suis Batman ! »",
+      "description": "Qui a besoin de compagnie ? Pas Batman™ en tout cas ! Quoi de mieux qu’un grand manoir vide, un peignoir confortable et un homard réchauffé au micro-ondes pour un Chevalier Noir prenant son repas seul. C’est probablement ce que mangent ce soir tous les playboys milliardaires qui mènent une double vie de super héros justiciers et Maîtres Constructeurs luttant contre le crime !"
     },
     {
       "name": "Fille Papillon",
@@ -22,7 +26,9 @@
       "health": 5,
       "attq": 1,
       "img": "img/figures/336x448_ButterflyGirl.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Regardez-moi ! Je suis un papillon, youpiii ! »",
+      "description": "La fille papillon est une énergique et minuscule apprentie entomologiste qui aime les fleurs presque autant qu’elle aime les insectes. Rien ne la réjouit plus que d’enfiler ses ailes et de papillonner dans les prés en observant ses amis les insectes voler de fleur en fleur pour butiner du nectar.\nLa fille papillon espère qu’un jour, elle aura une chenille comme animal de compagnie. Elle s’occupera de sa chenille à partir de l’œuf et lui donnera à grignoter les plus belles feuilles pour qu’elle grandisse bien. Et quand un papillon jaillira enfin de la chrysalide, elle le laissera s’envoler librement dans le monde extérieur. Elle est encore trop jeune pour avoir un animal, alors elle s’amuse à imaginer des aventures où elle est le plus grand et meilleur des papillons du monde."
     },
     {
       "name": "Connaisseur",
@@ -30,7 +36,9 @@
       "health": 4,
       "attq": 2,
       "img": "img/figures/336x448_Connoisseur.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Je n’ai jamais rien vu d’aussi fin ! Je lui donne un 6 sur 10. »",
+      "description": "Éternellement critique, le connaisseur est le plus grand maître du bon goût de la planète. Ses vastes connaissances touchent à la mode, l’architecture, la cuisine et les combinaisons de couleurs (noir et blanc avec une touche de rouge étant évidemment le summum). Les meilleurs artistes, designers et architectes d’intérieur lui demandent conseil et sollicitent son avis, et il est plus que content de partager son opinion personnelle sur leur travail.\nLe connaisseur est peut-être difficile à plaire, mais s’il aime ce que tu as fait, tu peux être sûr que tu as gagné un fan pour toujours, c’est d’ailleurs qu’il ne mange que les baguettes toutes fraiches du chef gourmet. Tu veux savoir comment obtenir un avis positif ? Fais quelque chose qui impressionnera son bulldog français chéri. Essaie de leur montrer ta dernière création LEGO® personnalisée et tu verras ce qu’ils auront à te dire !"
     },
     {
       "name": "Homme épi de maïs",
@@ -38,7 +46,9 @@
       "health": 2,
       "attq": 2,
       "img": "img/figures/336x448_CornCubGuy.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Savais-tu que le maïs est une sorte d’herbe ? Eh bien, maintenant, tu le sais ! »",
+      "description": "Ouh là là ! Le grand festival du maïs vient de commencer et l’homme épi de maïs va tout te dire sur cette fête estivale locale. Tu n’as peut-être pas encore entendu parler de ce festival, mais là où il vit, c’est un énorme évènement. Les gens viennent de tous les comtés voisins pour manger, se rencontrer et ne parler que d’une chose : le maïs !\nÊtre l’homme épi de maïs, c’est une lourde responsabilité. Il doit tout savoir sur le maïs et maintenir son costume propre et brillant afin qu’il ressemble toujours au maïs. Il s’entraîne même à agir comme un épi de maïs. Il espère juste qu’il ne fera pas trop chaud dehors, il ne s’agirait pas que son costume se transforme en popcorn !"
     },
     {
       "name": "Ursula",
@@ -46,7 +56,9 @@
       "health": 5,
       "attq": 5,
       "img": "img/figures/336x448_Disney_0000s_0000_71012_Leaflet_Ursula-hires.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« Ca ne te coûtera que ta voix ! »",
+      "description": "Ursula, la sorcière des mers, n’a d’autre désir que de contrôler l’océan entier. Elle utilise ses pouvoirs magiques pour passer des marchés avec des sirènes mâles et femelles désespérées, réalisant leurs vœux mais à un prix qu’ils peuvent rarement payer. Elle prétend vouloir aider Ariel, mais l’apparente générosité d’Ursula fait partie de son plan maléfique visant à voler le trident du roi Triton et à régner sur les mers !"
     },
     {
       "name": "Peter Pan",
@@ -54,7 +66,9 @@
       "health": 2,
       "attq": 2,
       "img": "img/figures/336x448_Disney_0000s_0001_71012_Leaflet_Peter-Pan-hires.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Par l'imparfait du subjonctif ! »",
+      "description": "Garçon magique et espiègle qui refuse de grandir, Peter Pan vit sur l’île lointaine du Pays imaginaire, où il vit des aventures quotidiennes à la tête des Enfants perdus et où il se bat contre un équipage de vilains pirates sous la houlette du capitaine Crochet. Avec l’aide de la poussière d’or de son amie la fée Clochette, Peter Pan peut même décoller et voler. Cependant, il doit faire attention à ne pas perdre son ombre."
     },
     {
       "name": "Chat de Cheshire",
@@ -62,7 +76,9 @@
       "health": 6,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0002_71012_Leaflet_Cheshire-Cat-hires-150923.jpg",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Nous sommes tous fou »",
+      "description": "Le chat du Cheshire est l’une des nombreuses créatures magiques qu’Alice rencontre lors de ses aventures dans le monde extraordinaire du Pays des merveilles. Lorsqu’elle lui demande son chemin à travers le bois de Tulgey, il ne lui répond que par des énigmes et des devinettes espiègles avant de disparaître mystérieusement de sa vue, ne laissant derrière lui que son large sourire."
     },
     {
       "name": "Alice au pays des merveilles",
@@ -70,7 +86,9 @@
       "health": 4,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0003_71012_Leaflet_Alice-hires-150923.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Le meilleur moyen de réaliser l'impossible est de croire que c'est possible »",
+      "description": "Alice a suivi un lapin blanc qui parle dans un terrier de lapin. Elle a alors entamé une aventure des plus inattendues et des plus originales dans le monde fantastique du Pays des merveilles. Pendant son voyage, elle rencontre des personnages étranges, tels que le chat du Cheshire ; elle fête des non-anniversaires au goûter du Chapelier fou et elle croise même la route de la Reine de cœur en colère."
     },
     {
       "name": "Donald",
@@ -78,7 +96,9 @@
       "health": 2,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0004_71012_Leaflet_Donald-Duck-hires-150923.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Oh, chouette, chouette, chouette ! »",
+      "description": "Donald Duck est intelligent et énergique, avec un caractère impétueux qui prend souvent le dessus. Il est impatient, têtu, facilement agacé et il adore être au centre de l’attention. Mais au fond, il a un cœur d’or et reste un grand timide avec sa petite amie Daisy. Les aventures de Donald et de ses meilleurs amis Mickey et Dingo sont pleines d’amusement, de rire et souvent, de petits problèmes !"
     },
     {
       "name": "Minnie",
@@ -86,7 +106,9 @@
       "health": 2,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0005_71012_Leaflet_Mini-Mouse-hires-151012.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Follow your dreams »",
+      "description": "Minnie Mouse est toujours prête à tendre la main à un ami en détresse. Elle est douce, gentille et avenante, avec un point de vue optimiste, qui lui permet de voir le bon côté de toute situation. Elle aime les jours ensoleillés, organiser des soirées et se faire nouveaux amis. Minnie est également une chanteuse et une danseuse talentueuse, qui a une chanson dans la tête où qu’elle aille !"
     },
     {
       "name": "Mickey",
@@ -94,15 +116,9 @@
       "health": 2,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0006_71012_Leaflet_Mickey-Mouse-hires-151012.jpg",
-      "type": "villager"
-    },
-    {
-      "name": "Daisy",
-      "value": 2,
-      "health": 3,
-      "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0007_71012_Leaflet_Daisy-Duck-hires-150923.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Rêve ta vie en couleur, c'est le secret du bonheur. »",
+      "description": "Mickey Mouse est une petite souris courageuse qui use de son intelligence pour résoudre les problèmes, même les plus absurdes. Il s’investit pleinement dans toutes les situations, et ses bonnes intentions ont toujours le dessus, même quand tout ne se passe pas exactement comme prévu. Ami attentionné et leader né, Mickey est capable de réaliser presque tout ce qu’il a décidé d’entreprendre."
     },
     {
       "name": "Capitaine Crochet",
@@ -110,7 +126,9 @@
       "health": 2,
       "attq": 3,
       "img": "img/figures/336x448_Disney_0000s_0008_71012_Leaflet_Captain-Hook-hires-151012.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« Tick ! Tick ! Tick ! »",
+      "description": "Le capitaine Crochet est à la tête d’une bande de pirates malhonnêtes à bord de son navire, le Jolly Roger. Un crochet remplace la main gauche du capitaine, que Peter Pan a jetée en pâture à un crocodile. Le capitaine veut donc se venger. Crochet est extrêmement sournois et traître, mais il s’enfuit dès qu’il entend le tic-tac du réveil logé dans le ventre du crocodile affamé."
     },
     {
       "name": "La petite sirène",
@@ -118,7 +136,9 @@
       "health": 2,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0009_71012_Leaflet_Ariel-hires.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Je viens d’avoir seize ans, je ne suis plus une petite fille ! »",
+      "description": "Ariel est une jeune sirène élégante, indépendante, intelligente et dotée d’une superbe voix, mais elle est aussi rêveuse. Elle rêve de visiter un jour la terre au-dessus de la surface de l’océan et elle possède même une collection secrète d’objets mystérieux provenant du monde des humains. Sa curiosité lui attire parfois des problèmes avec son père, le roi Triton, tandis qu’elle lui fait vivre des aventures passionnantes sous l’océan et sur terre."
     },
     {
       "name": "Syndrome",
@@ -126,7 +146,9 @@
       "health": 2,
       "attq": 3,
       "img": "img/figures/336x448_Disney_0000s_0010_71012_Leaflet_Syndrome-hires.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« ... »",
+      "description": "Syndrome n’est pas né avec des pouvoirs spéciaux, mais il a toujours envié l’attention et l’admiration accordées aux super héros. Emporté par sa jalousie, il utilise son intelligence et son ingéniosité pour se transformer en super méchant. Désormais, il passe ses jours dans sa tanière, sur une île lointaine, où il invente des gadgets de haute technologie et des robots pour mener à bien son projet de vengeance diabolique !"
     },
     {
       "name": "Alien",
@@ -134,7 +156,9 @@
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_Disney_0000s_0011_71012_Leaflet_Alien-hire.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "Le grappin l'a choisi !",
+      "description": "Adoptés par monsieur et madame Patate, les trois aliens verts s’empressent de rappeler à monsieur Patate qu’ils lui doivent une reconnaissance éternelle puisque celui-ci leur a sauvé la vie."
     },
     {
       "name": "Monsieur Incredible",
@@ -142,7 +166,9 @@
       "health": 2,
       "attq": 3,
       "img": "img/figures/336x448_Disney_0000s_0012_71012_Leaflet_Mr-Incredible-hires.jpg",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Quand tout le monde sera exceptionnel, plus personne ne le sera ! »",
+      "description": "Il y quelques années, c’était lui le super héros le plus connu, le plus populaire du monde. Aujourd’hui expert en sinistres d’une cinquantaine d’années, Bob Parr a dû se remettre en forme et s’unir à sa famille pour sauver la planète des forces du mal et redevenir le super fort, super résistant M. Incredible. Il pourrait penser que les meilleures années de sa vie sont derrière lui, mais il va découvrir que sa famille est sa plus belle aventure."
     },
     {
       "name": "Aladin",
@@ -150,7 +176,9 @@
       "health": 2,
       "attq": 4,
       "img": "img/figures/336x448_Disney_0000s_0013_71012_Leaflet_Aladdin-hires.jpg",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Totalement incassable... Ah, cassé... »",
+      "description": "Aladdin a grandi comme un pauvre rat des rues dans la ville d’Agrabah, où son esprit rapide et ses prouesses acrobatiques lui ont permis de devancer les gardes du Sultan tandis qu’il rêvait d’une vie meilleure. Maintenant qu'il a trouvé la lampe du génie, il prévoit d'utiliser ses trois vœux magiques pour devenir un prince, gagner le cœur de la princesse Jasmine et libérer le génie !"
     },
     {
       "name": "Stitch",
@@ -158,7 +186,9 @@
       "health": 3,
       "attq": 4,
       "img": "img/figures/336x448_Disney_0000s_0014_71012_Leaflet_Stitch-hires-150923.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« Ohana »",
+      "description": "Stitch, un alien, est le seul représentant de son espèce. Il est le résultat d’une expérience génétique illégale menée par Jumba, un savant fou, qui l’appelle simplement « Expérience 626 ». Même si Stitch a l’air d’être un petit être à six pattes inoffensif et poilu, sa seule existence est une abomination aux yeux de tout ce qui est considéré comme décent dans la galaxie. Jumba a créé Stitch dans le but d’obtenir une machine de combat ultime. Il est anormalement fort, presque invincible, plus intelligent qu’un superordinateur... et très malicieux. Il se sent contraint de détruire tout ce qui croise son chemin et ne peut pas lutter contre sa programmation... jusqu’à ce qu’il découvre un sentiment nouveau : faire partie d’une famille."
     },
     {
       "name": "Buzz L'éclair",
@@ -166,7 +196,9 @@
       "health": 4,
       "attq": 4,
       "img": "img/figures/336x448_Disney_0000s_0015_71012_Leaflet_Buzz-Lightyear-hire.jpg",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "Vers l'infini et au-delà !",
+      "description": "Alors que l’unique mission de Buzz l’Éclair était de vaincre l’empereur Zurg, tout ce qu’il souhaite désormais c’est d’être aux côtés de Woody, Jessie et le reste de la famille de jouets d’Andy."
     },
     {
       "name": "Maléfique",
@@ -174,7 +206,9 @@
       "health": 3,
       "attq": 3,
       "img": "img/figures/336x448_Disney_0000s_0016_71012_Leaflet_Malificent-hires.jpg",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« J'aime quand tu me supplies. Continue... »",
+      "description": "Magicienne malfaisante et maitresse du mal, Maléfique jette un terrible sort à la princesse Aurore qui vient de naître, la condamnant à se piquer le doigt à la pointe d’une quenouille et à tomber dans un sommeil sans fin, avant l’aube de ses 16 ans. Maléfique fera tout ce qui est en son pouvoir pour assurer sa vengeance, allant même jusqu’à se transformer en dragon."
     },
     {
       "name": "Génie de la lampe",
@@ -182,7 +216,9 @@
       "health": 2,
       "attq": 2,
       "img": "img/figures/336x448_Disney_0000s_0017_71012_Leaflet_Genie-hires.jpg",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Dix millénaires, ça vous flanque un de ces torticolis. »",
+      "description": "Amical, amusant, exubérant, survolté et polymorphe, le génie est resté enfermé dans sa lampe pendant dix mille ans. Lorsqu’Aladdin l’appelle en frottant la lampe, le génie se décide d’aider son nouvel ami à réaliser tous ses vœux. Mais cet être magique et joyeux aimerait réaliser son propre vœu : être libre et vivre sa propre vie."
     },
     {
       "name": "Elfe",
@@ -190,7 +226,9 @@
       "health": 3,
       "attq": 4,
       "img": "img/figures/336x448_ElfMaiden.png",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Oyez ! Je sens l’aventure à l’horizon ! »",
+      "description": "La plupart des elfes préfèrent vivre cachés dans les forêts de contrées elfiques, mais celle-ci a décidé que sa voie se trouvait au-delà de leurs frontières légendaires. Ainsi, l’épée et le bouclier en main, elle est partie s’aventurer dans les terres inconnues, à la recherche de méchant à pourfendre, de bourgades à protéger et de princes ou princesses à assister.\nL’elfe est intelligente, déterminée et elle se fait des amis facilement. Une fois qu’elle a choisi le chemin qu’elle veut prendre, rien ne peut l’en dévier. Son seul regret : avoir acheté une épée dorée enchantée et chantante lors de ses péripéties. Les morceaux sont sympas pour les longues promenades, mais impossible de la faire taire quand elle fait des quêtes où la discrétion est cruciale !"
     },
     {
       "name": "La prof de fitness",
@@ -198,7 +236,9 @@
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_FitnessInstructor.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« L’important, c’est de s’amuser ! »",
+      "description": "Cette professeur de danse pleine de joie sait à quel point ça fait du bien d’enfiler des vêtements serrés et colorés, et de danser sur toutes sortes de musiques. Elle essaie toujours de créer de nouveaux styles de danse, mais ils n’ont pas tellement de succès. Probablement parce qu’elle est la seule à pouvoir tenir le rythme. Si tu veux la voir vraiment tout donner, il te suffit de mettre un morceau bien rythmé et de reculer !\nContrairement à son amie la prof de fitness, qui exige qu’on suive exactement ses mouvements, la professeur de danse préfère voir ses élèves rentrer dans la musique à leur façon et s’amuser en dansant, comme elle. Si elle n’est pas en train de danser, c’est qu’elle boit un coup : il est important de bien s’hydrater après tout !"
     },
     {
       "name": "Gladiateur",
@@ -206,15 +246,19 @@
       "health": 3,
       "attq": 6,
       "img": "img/figures/336x448_Gladiator.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« Leçon numéro un : Seul un idiot combat sous le soleil de midi. »",
+      "description": "Ce puissant gladiateur romain a survécu à bien des combats dans l’arène. On le surnomme d’ailleurs « Le Lion » en hommage à sa force insurmontable et son courage, mais aussi pour sa tendance à faire la sieste à l’ombre quand il fait ensoleillé. Même s’il a combattu et vaincu des guerriers de toutes sortes de contrées lointaines, il est connu pour les avoir épargnés et leur avoir offert son amitié.\n      Le gladiateur romain a récemment ouvert une école de gladiateurs où il enseigne aux autres figurines l’art du combat, transmettant tout ce qu’il a appris de ses compagnons combattants du monde entier. Il est désormais si célèbre qu’il peut choisir ses combats, et il n’accepte que les plus difficiles, voire ceux qui lui semblent carrément impossibles !"
     },
     {
-      "name": "Cuisinier",
+      "name": "Chef ",
       "value": 1,
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_GourmetChef.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« La nouvelle spécialité du chef te ravira les papilles à coup sûr ! »",
+      "description": "Après des années de formation à l’étranger, le chef gourmet est enfin devenu chef cuisinier dans un restaurant chic. Grâce à ses voyages dans le monde entier, elle a appris à préparer avec brio d’excellents plats de tous les pays, continents et régions. Elle connait même quelques recettes d’autres planètes et de dimensions parallèles !\nChacune des créations préparées avec soin par le chef gourmet est une ingénieuse combinaison d’ingrédients à la fois délicieuse et parfaitement nutritive. Elle le rendrait parfaitement nourrissant aussi, si elle ne voulait pas qu’il te reste de la place pour le dessert : les tartes sont sa spécialité, tu quitteras la table en en voulant plus !"
     },
     {
       "name": "Bandit de grand chemin",
@@ -222,7 +266,9 @@
       "health": 4,
       "attq": 4,
       "img": "img/figures/336x448_Highwayman.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« La bourse ou la vie ! »",
+      "description": "Si tu voyages en carrosse la nuit à travers les bois sombres, prends garde à l’audacieux bandit de grand chemin ! Ce voleur de noir vêtu peut jaillir de l’ombre et te menacer au pistolet de lui donner tous tes bijoux, ton argent et tes trésors. En fait, il le fera aussi en journée. Tant qu’il y a un butin à la clé, il n’est pas difficile.\nLe bandit de grand chemin dissimule son visage avec un masque et déguise sa voix en parlant avec un ton bourru. Il travaille toujours seul, non pas parce qu’il veut garder l’argent pour lui-même (même si c’est ce qu’il fait), mais parce que les autres lambins ne s’entendent pas avec lui. Si tu veux échapper au bandit de grand chemin, menace-le simplement de tacher de boue le jabot en dentelle plissée qu’il porte à son cou. Il y tient plus que tout et y fait extrêmement attention !"
     },
     {
       "name": "Vendeur de Hotdog",
@@ -230,7 +276,9 @@
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_Hotdog_Vendor.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Un hot-dog et un soda, tout de suite ! »",
+      "description": "Ce pétillant vendeur de hot-dogs tient fermement à ce que son stand offre les meilleurs hot-dogs des environs. Il a remué ciel et terre pour créer le hot-dog ultime : l’équilibre parfait entre le goût, les condiments et le pain. Il pense qu’il y est enfin arrivé, mais le dernier mot reviendra aux clients affamés.\nPour attirer la clientèle, le vendeur de hot-dogs a demandé à l’homme hot-dog de faire sa pub lors des fêtes et des évènements spéciaux. La seule difficulté : faire en sorte que le personnage costumé arrête de faire les éloges des hot-dogs en général et se concentre sur un stand en particulier. Et si tu passais un de ces jours commander un hot-dog ? Tu y trouveras toujours un bon repas, une boisson fraiche, et le tout avec le sourire."
     },
     {
       "name": "Surfeur",
@@ -238,7 +286,9 @@
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_Prosurfer.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Personne ne surfe mieux que moi, par même un bar ! »",
+      "description": "Ce surfeur pro a la compétition dans la peau, il a toujours voulu être le meilleur du monde. Il n’utilise que le meilleur équipement des meilleures marques. Il a joué dans des pubs à la télé et a vanté de nombreux produits, mais il a toujours eu l’impression que quelque chose manquait. Un jour, en pleine compétition de surf, il a vu des dauphins glisser sur une énorme vague déferlante... et y a vu un défi à relever.\nLe surfeur pro a surfé sur cette cague jusqu’en pleine mer, déterminé à montrer aux dauphins qu’il était encore plus doué qu’eux. La vague a continué son chemin et le surfeur pro avec elle. Depuis, dans sa course sauvage à travers les océans, il s’est mesuré à des raies manta, des poissons volants et des poissons-lunes, et les a tous laissés dans son sillage. S’il commence à douter de lui ou à vaciller, il regarde la face de requin pleine de dents peinte sur sa planche et ça l’aide à se ressaisir !"
     },
     {
       "name": "Héro spatial rétro",
@@ -246,7 +296,9 @@
       "health": 5,
       "attq": 3,
       "img": "img/figures/336x448_Retrospacehero.png",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Je me tirerai cette épine plutonienne du pied grâce à mes connaissances spatiales ! »",
+      "description": "Le héros spatial rétro est un aventurier spatial de la vieille école, plein d’énergie, de vigueur et d’une volonté imbattable de venir à bout des méchants galactiques et des menaces cosmiques. Il vit dans un univers palpitant rempli de pluies d’astéroïdes (qui ressemblent un peu à du papier mâché suspendu à des ficelles), de vaisseaux atomiques (leur trainée fait penser à la fumée de glace carbonique, mais n’y fais pas attention) et de déjeuners ultra-vitaminés en pilules (plus des œufs brouillés et des toasts, sinon il aura faim toute la matinée).\nLa journée du héros spatial rétro commence toujours par une alerte interplanétaire et se termine dans un suspens intenable. Sa fusée sera-t-elle engloutie par un trou noir, fera-t-elle face à une flotte de soucoupes volantes ou partira-t-elle à la dérive vers une mystérieuse planète inconnue ? Il n’est jamais sûr de rien, si ce n’est du fait que quoi qu’il se passe, une nouvelle aventure futuriste l’attend !"
     },
     {
       "name": "Garçon fusée",
@@ -254,7 +306,9 @@
       "health": 3,
       "attq": 2,
       "img": "img/figures/336x448_RocketBoy.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« 3 … 2 … 1 … décollage ! »",
+      "description": "Le garçon fusée est complètement dingue de l’espace. Tout ce qu’il dit, écrit, dessine et fait a un rapport avec les fusées et la conquête de l’espace. Il rêve de décoller et de vivre des aventures interstellaires avec son explorateur spatial favori, le héros spatial rétro... ou sa favorite, la fille intergalactique... ou encore le cosmonaute... ou le mineur de l’espace...\nQuand il regarde le ciel nocturne, le garçon fusée a juste envie de courir enfiler son costume de fusée et de sortir son drapeau fait maison. Équipé pour sa prochaine mission, il se tient sous les étoiles scintillantes et saute de haut en bas en prétendant qu’il vole à travers le système solaire en quête de découvertes palpitantes, comme son papa, l’astronaute !"
     },
     {
       "name": "Homme fort du cirque",
@@ -262,7 +316,9 @@
       "health": 2,
       "attq": 5,
       "img": "img/figures/336x448_Strongman.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« Les haltères, c’est trop facile. Donne-moi quelque chose de plus lourd, tu veux bien ? »",
+      "description": "Certaines figurines s’entraînent toute leur vie pour gagner des muscles de fer, mais chez l’homme-fort du cirque, ils sont venus tous seuls. Dans ses mains, les poids de cent kilos semblent ne pas peser plus qu’un oreiller, et il sait réduire des blocs de ciment en poussière sans le moindre effort. Une fois, il a tenu un hôtel de ville sur sa tête alors qu’un mariage s’y déroulait, puis il a transporté le bâtiment à l’aéroport afin que le couple heureux ne rate pas son avion.\nMalgré sa grande force, l’homme-fort du cirque est extraordinairement doux. Il doit l’être, parce que s’il ne fait pas attention, il pourrait très bien briser quelque chose ou l’envoyer voler à des kilomètres. Qu’est-ce qui a pu le rendre si puissant ? D’après lui, c’est parce qu’il mange beaucoup de légumes et qu’il dort au moins huit heures par nuit, mais certains pensent que son véritable secret réside dans son impressionnante moustache !"
     },
     {
       "name": "Vétérinaire",
@@ -270,7 +326,9 @@
       "health": 1,
       "attq": 3,
       "img": "img/figures/336x448_Vet.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Ne bouge pas, tout va bien se passer. »",
+      "description": "Cette vétérinaire au grand cœur aime toutes les créatures de l’univers LEGO®, des chiots et chatons tous doux aux orques mutantes, en passant par les requins cyborgs à guidage laser et les policiers alligators. Grâce à sa nature affectueuse et patiente, près d’elle, les animaux se calment immédiatement, peu importe s’ils sont grands, écailleux ou s’ils ont de grandes dents pointues.\nUne fois que ses patients sont relaxés, la vétérinaire vérifie si tout va bien et les soigne si quelque chose ne va pas. Elle te conseillera volontiers quelques récompenses saines pour gâter tes amis à fourrure. Les animaux adorent la vétérinaire, et ils déposent souvent des cadeaux inattendus à la porte de son cabinet. Les carottes que les lapins lui laissent ne la dérangent pas, mais elle apprécie moins les pelotes déposées sur son paillasson par la chouette du magicien quand ce dernier est en ville !"
     },
     {
       "name": "Yuppie",
@@ -278,7 +336,9 @@
       "health": 1,
       "attq": 1,
       "img": "img/figures/336x448_Yuppie.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Je monte comme une flèche ! »",
+      "description": "Selfies ? Applis ? Emojis ? Ce type n’en a jamais entendu parler. Sorti tout droit des années 1980, ce tombeur est l’archétype du jeune professionnel urbain en plein essor. Il adore les costumes blancs et les chemises criardes, et bien sûr, il porte des lunettes de soleil le jour comme la nuit.\nLe yuppie a un super boulot et plein de place pour son ambition, et tu peux être sûr qu’il t’en parlera en déjeuner d’affaires (steak et homard) ou pendant une partie amicale de mini golf (comme c’est une figurine, il est un peu trop petit pour le golf taille réelle). Besoin de le contacter ? No problemo. Bipe-le simplement et il te rappellera direct avec son portable flambant neuf. C’est le dernier cri, avec son antenne et des boutons à la place de ces vieux cadrans téléphoniques ringards et encombrants !"
     },
     {
       "name": "Ninja",
@@ -286,7 +346,9 @@
       "health": 4,
       "attq": 7,
       "img": "img/figures/8683_Portrait_Ninja.png",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« Comme une ombre dans la nuit. »",
+      "description": "Furtif. Malin. Un maître des arts martiaux. Malheureusement pour lui, aucun de ces qualificatifs ne convient au ninja. Il a beau essayer de se fondre dans l'obscurité ou de passer inaperçu, comme les autres ninjas savent le faire, avec lui rien ne se passe comme prévu. La triste réalité est que ce ninja est un vrai maladroit et quelle que soit la grâce avec laquelle il amorce son mouvement, pour faire un salto, ramper le long d'un toit ou se lancer dans un combat épique au sabre, il finit toujours par trébucher sur son propre pied, tomber du toit ou se donner un coup avec son sabre antique et légendaire. Sans oublier qu'il a peur du noir...\nPersonne ne sait d'ailleurs comment il a bien pu obtenir son diplôme de ninja. Mais quels que soient les échecs qu'il essuie dans la profession qu'il a choisi, le ninja ne baisse pas les bras et continue à se battre, convaincu après chacune de ses bourdes que ce sera la dernière et qu'il finira par devenir le légendaire guerrier ninja qu'il rêve d'être."
     },
     {
       "name": "Space Marine",
@@ -294,7 +356,9 @@
       "health": 8,
       "attq": 8,
       "img": "img/figures/8831_Portrait_SpaceMarine.png",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« Aucune menace spatiale n’échappe à la patrouille galactique ! »",
+      "description": "a patrouille galactique est un escadron d’élite composée de héros de l’espace, qui fait régner l’ordre dans les secteurs les plus éloignés et les plus dangereux de la galaxie, luttant contre les forces du mal cosmiques partout où elles sévissent. Avec leur armure robuste et leur casque bardé de composants électroniques et tactiques, les membres de la patrouille possèdent l'équipement, les compétences et l'attitude nécessaires pour toujours mener à bien leur mission.\nPour rejoindre la patrouille galactique, tu devras être aussi robuste que du titane, capable de résister aux pouvoirs de contrôle mental des monstres pluuviens télépathes et savoir retenir ta respiration dans le vide galactique pendant au moins 42 quarkoïdes. La plupart des recrues ne tiennent pas le choc, mais ceux qui vont au bout des sélections sont les meilleurs, la crème de la crème, prêts à défendre l’univers contre les menaces interstellaires de tout type, et peu importe le nombre d’yeux, de tentacules et de griffes que l’ennemi possède !"
     },
     {
       "name": "Le vengeur extraterrestre",
@@ -302,7 +366,9 @@
       "health": 6,
       "attq": 10,
       "img": "img/figures/71000_Portrait_SpaceOrc.png",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« Frappe, écrase et détruis ! »",
+      "description": "Le vengeur extraterrestre appartient à une équipe de terribles guerriers venus de toute la galaxie. Avec une armure et des armes ramassées sur les champs de batailles d'une centaine de mondes déchirés par la guerre, il manque peut-être de discipline militaire. Mais il compense par son immense force et sa volonté de foncer au combat quels que soient les risques.\nIls sont 5000 soldats identiques, le vengeur extraterrestre a donc l'habitude de ne pas se faire remarquer dans la foule. Mais ça ne l'ennuie pas que certains le voient seulement comme un soldat de plus, sans nom et sans visage : donne-lui un planétoïde sous ses pieds et un fusil désintégrateur dans sa main et il s'attaquera à tout ce qu'il rencontre sur son chemin !"
     },
     {
       "name": "Panda",
@@ -310,7 +376,9 @@
       "health": 3,
       "attq": 3,
       "img": "img/figures/71004_Portrait_DudePanda.png",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Je construis uniquement en noir... en blanc... et en bambou. »",
+      "description": "La plupart des gens pensent que Mr Panda est une simple mascotte dans un costume de panda. Mais en cas de problème, il se révèle être un Maître Constructeur infiltré qui a juré de libérer les citoyens de Bricksburg des chaînes imposées par les règles et la conformité.\nMr Panda est déterminé à déjouer les complots maléfiques de Lord Business, même s'il n'a pas réussi jusqu'à présent. Dans ses tentatives pour entrer dans la tour des bureaux d'Octan, il n'a pas encore dépassé les portes laser, et encore moins les requins et les requins-laser. Le « Spécial », attendu depuis longtemps, sera peut-être finalement la réponse pour terminer sa mission !"
     },
     {
       "name": "Bart",
@@ -318,15 +386,19 @@
       "health": 1,
       "attq": 5,
       "img": "img/figures/Bart_168x224.jpg",
-      "type": "fighter"
+      "type": "fighter",
+      "taunt": "« Ay Caramba »",
+      "description": "Qui est ce justicier masqué de la nuit ? C'est Bartman, le mystérieux combattant anticriminalité d'un mètre trente qui veille sur les rues de Springfield. Personne ne peut échapper à son fidèle lance-pierre, qu'il s'agisse de super méchants ou de boîtes de conserve placées sur des poteaux. Rares sont ceux qui savent (ou se préoccupent de savoir) que Bartman n'est secrètement autre que Bart Simpson, portant un déguisement fait maison. Mais bon, toute émission a besoin d'un super héros, et c'est le meilleur qu'on ait trouvé !"
     },
     {
-      "name": "Chtullu",
+      "name": "Soldat extra-terrestre",
       "value": 9,
       "health": 10,
       "attq": 10,
       "img": "img/figures/characters_168x224_serie13_Alien.png",
-      "type": "demon"
+      "type": "demon",
+      "taunt": "« Tremblez face à la puissance de notre armada spatiale ultra-perfectionnée ! »",
+      "description": "Issus de l'abysse de Toflacrev, au plus profond de l'espace inexploré, les soldats extraterrestres ont patienté pendant une éternité en stase cryogénique. Tirés de leur sommeil par l'explosion d'un soleil voisin, ils ont repris leur ancienne mission : rebâtir le cosmos à leur image, dans un grand grouillement de tentacules.\nToutefois, durant les milliers d'années que les soldats extraterrestres ont passées en stase, les galaxies ont évolué et leur technologie est désormais terriblement désuète. De nos jours, plus personne n'utilise un blaster laser numérique ! Et c'est ainsi que, de monde en monde, ils accumulent les défaites. Leur esprit collectif ne leur permet pas de comprendre pourquoi les gens ne peuvent s'empêcher de rire à l'approche de leurs pesants vaisseaux-fusées."
     },
     {
       "name": "Licorne",
@@ -334,7 +406,9 @@
       "health": 6,
       "attq": 7,
       "img": "img/figures/characters_168x224_serie13_Unicorn.png",
-      "type": "angel"
+      "type": "angel",
+      "taunt": "« C'est sans doute une licorne magique ! Ouiii ! »",
+      "description": "Les gens ne croient pas aux licornes ? La Femme-licorne va leur prouver qu'ils ont tort. Qu'elle se pavane dans un pré embrumé, qu'elle hennisse sous une fenêtre pour ensuite partir en courant ou qu'elle se contente de lancer de la poussière brillante autour d'elle, elle est bien décidée à montrer au monde entier que les licornes existent vraiment.\nLa Femme-licorne déborde de joie de vivre et d'optimisme. Rien ne la rebute, même les gens qui lui disent qu'elle est stupide et que les licornes ne sont qu'un mythe. Elle se contentera de leur faire une délicate attention quand ils auront le dos tourné. Et quand ils demanderont qui a fait ça, elle dira, en souriant, que c'était une licorne !"
     },
     {
       "name": "Homer",
@@ -342,7 +416,9 @@
       "health": 2,
       "attq": 5,
       "img": "img/figures/Homer_168x224.jpg",
-      "type": "villager"
+      "type": "villager",
+      "taunt": "« Mmmh un doonut! »",
+      "description": "Homer Simpson n'est peut-être pas le mari le plus attentif, mais aucun doute qu'il aime sa femme Marge. Pour une occasion importante ou un anniversaire (quand, par miracle, il n'a pas oublié), il se met sur son 31 et joue le parfait gentleman auprès d'elle. Rarement, il lui arrive même de dire « s'il te plaît » et « merci ». Quel homme cet Homer en costume-cravate !"
     }
   ]
 }
