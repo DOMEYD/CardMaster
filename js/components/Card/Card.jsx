@@ -48,7 +48,12 @@ class Card extends PureComponent {
   render() {
     const { card, minimal, selected } = this.props;
 
-    return (<div className={`card${minimal ? ' small' : ''}${card.health <= 0 ? ' died' : ''}${selected ? ' selected' : ''}`}>
+    let classname = 'card';
+    classname += minimal ? ' small' : '';
+    classname += card.health <= 0 ? ' died' : '';
+    classname += selected ? ' selected' : '';
+    classname += card.type ? ` type-${card.type}` : '';
+    return (<div className={classname}>
       <img src={card.img} className="figure" alt={`figure ${card.name}`} />
       <span className="card-name">{ card.name }</span>
       <div className="card-infos">
@@ -65,19 +70,24 @@ class Card extends PureComponent {
         className="card-modal"
         contentLabel="card data"
       >
-        <h2 className="card-name">{card.name}</h2>
-        <p className="info card-cost">
-          <img src="../../../img/money-bag.svg" className="picto" alt="Card value" />
-          { card.value }
-        </p>
-        <p className="info card-health">
-          <img src="../../../img/if_heart_299063.svg" className="picto" alt="Card health" />
-          { card.health }
-        </p>
-        <p className="info card-attq">
-          <img src="../../../img/gaming.svg" className="picto" alt="Card attack" />
-          { card.attq }
-        </p>
+        <h2 className="card-name">{card.name} ({card.type})</h2>
+        <div className="card-infos">
+          <p className="info card-cost">
+            { (new Array(card.value)).fill(0).map(() => (
+              <img src="../../../img/money-bag.svg" className="picto" alt="Card value" />
+            )) }
+          </p>
+          <p className="info card-health">
+            { (new Array(card.health)).fill(0).map(() => (
+              <img src="../../../img/if_heart_299063.svg" className="picto" alt="Card value" />
+            )) }
+          </p>
+          <p className="info card-attq">
+            { (new Array(card.attq)).fill(0).map(() => (
+              <img src="../../../img/gaming.svg" className="picto" alt="Card value" />
+            )) }
+          </p>
+        </div>
       </Modal> : null}
     </div>);
   }

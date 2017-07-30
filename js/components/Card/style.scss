@@ -121,6 +121,22 @@
     transform: scale(0);
     transition: transform 200ms;
   }
+
+  &.type-angel {
+    background-color: #BBDEFB;
+  }
+  
+  &.type-demon {
+    background-color: #FFCDD2;
+  }
+  
+  &.type-villager {
+    background-color: #C8E6C9;
+  }
+  
+  &.type-fighter {
+    background-color: #FFE0B2;
+  }
 }
 
 .card-modal {
@@ -129,14 +145,26 @@
   max-width: 50vw;
   height: auto;
   margin: auto;
+  outline: 0;
+  position: relative;
+  top: 2rem;
+  box-shadow: 0 0 5px grey;
 
   .card-name {
     text-align: center;
+    margin: 0 0 1rem;
   }
 
-  .info {
-    .picto {
-      max-width: 1rem;
+  .card-infos {
+    display: flex;
+    justify-content: center;
+
+    .info {
+      margin: 0 0.5rem;
+
+      .picto {
+        width: 1rem;
+      }
     }
   }
 }

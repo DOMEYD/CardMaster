@@ -5,301 +5,344 @@
       "value": 5,
       "health": 7,
       "attq": 5,
-      "img": "img/figures/336x448_BattleDwarf.png"
+      "img": "img/figures/336x448_BattleDwarf.png",
+      "type": "fighter"
     },
     {
       "name": "Bruce Wayne",
       "value": 8,
       "health": 5,
       "attq": 6,
-      "img": "img/figures/336x448_Brucewayne.png"
+      "img": "img/figures/336x448_Brucewayne.png",
+      "type": "angel"
     },
     {
       "name": "Fille Papillon",
       "value": 2,
       "health": 5,
       "attq": 1,
-      "img": "img/figures/336x448_ButterflyGirl.png"
+      "img": "img/figures/336x448_ButterflyGirl.png",
+      "type": "villager"
     },
     {
       "name": "Connaisseur",
       "value": 3,
       "health": 4,
       "attq": 2,
-      "img": "img/figures/336x448_Connoisseur.png"
+      "img": "img/figures/336x448_Connoisseur.png",
+      "type": "villager"
     },
     {
       "name": "Homme épi de maïs",
       "value": 2,
       "health": 2,
       "attq": 2,
-      "img": "img/figures/336x448_CornCubGuy.png"
+      "img": "img/figures/336x448_CornCubGuy.png",
+      "type": "villager"
     },
     {
       "name": "Ursula",
       "value": 7,
       "health": 5,
       "attq": 5,
-      "img": "img/figures/336x448_Disney_0000s_0000_71012_Leaflet_Ursula-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0000_71012_Leaflet_Ursula-hires.jpg",
+      "type": "demon"
     },
     {
       "name": "Peter Pan",
       "value": 1,
       "health": 2,
       "attq": 2,
-      "img": "img/figures/336x448_Disney_0000s_0001_71012_Leaflet_Peter-Pan-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0001_71012_Leaflet_Peter-Pan-hires.jpg",
+      "type": "villager"
     },
     {
       "name": "Chat de Cheshire",
       "value": 2,
       "health": 6,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0002_71012_Leaflet_Cheshire-Cat-hires-150923.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0002_71012_Leaflet_Cheshire-Cat-hires-150923.jpg",
+      "type": "angel"
     },
     {
       "name": "Alice au pays des merveilles",
       "value": 2,
       "health": 4,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0003_71012_Leaflet_Alice-hires-150923.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0003_71012_Leaflet_Alice-hires-150923.jpg",
+      "type": "villager"
     },
     {
       "name": "Donald",
       "value": 1,
       "health": 2,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0004_71012_Leaflet_Donald-Duck-hires-150923.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0004_71012_Leaflet_Donald-Duck-hires-150923.jpg",
+      "type": "villager"
     },
     {
       "name": "Minnie",
       "value": 1,
       "health": 2,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0005_71012_Leaflet_Mini-Mouse-hires-151012.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0005_71012_Leaflet_Mini-Mouse-hires-151012.jpg",
+      "type": "villager"
     },
     {
       "name": "Mickey",
       "value": 1,
       "health": 2,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0006_71012_Leaflet_Mickey-Mouse-hires-151012.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0006_71012_Leaflet_Mickey-Mouse-hires-151012.jpg",
+      "type": "villager"
     },
     {
       "name": "Daisy",
       "value": 2,
       "health": 3,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0007_71012_Leaflet_Daisy-Duck-hires-150923.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0007_71012_Leaflet_Daisy-Duck-hires-150923.jpg",
+      "type": "villager"
     },
     {
       "name": "Capitaine Crochet",
       "value": 2,
       "health": 2,
       "attq": 3,
-      "img": "img/figures/336x448_Disney_0000s_0008_71012_Leaflet_Captain-Hook-hires-151012.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0008_71012_Leaflet_Captain-Hook-hires-151012.jpg",
+      "type": "demon"
     },
     {
       "name": "La petite sirène",
       "value": 1,
       "health": 2,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0009_71012_Leaflet_Ariel-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0009_71012_Leaflet_Ariel-hires.jpg",
+      "type": "villager"
     },
     {
       "name": "Syndrome",
       "value": 2,
       "health": 2,
       "attq": 3,
-      "img": "img/figures/336x448_Disney_0000s_0010_71012_Leaflet_Syndrome-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0010_71012_Leaflet_Syndrome-hires.jpg",
+      "type": "demon"
     },
     {
       "name": "Alien",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_Disney_0000s_0011_71012_Leaflet_Alien-hire.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0011_71012_Leaflet_Alien-hire.jpg",
+      "type": "demon"
     },
     {
       "name": "Monsieur Incredible",
       "value": 2,
       "health": 2,
       "attq": 3,
-      "img": "img/figures/336x448_Disney_0000s_0012_71012_Leaflet_Mr-Incredible-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0012_71012_Leaflet_Mr-Incredible-hires.jpg",
+      "type": "angel"
     },
     {
       "name": "Aladin",
       "value": 3,
       "health": 2,
       "attq": 4,
-      "img": "img/figures/336x448_Disney_0000s_0013_71012_Leaflet_Aladdin-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0013_71012_Leaflet_Aladdin-hires.jpg",
+      "type": "angel"
     },
     {
       "name": "Stitch",
       "value": 3,
       "health": 3,
       "attq": 4,
-      "img": "img/figures/336x448_Disney_0000s_0014_71012_Leaflet_Stitch-hires-150923.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0014_71012_Leaflet_Stitch-hires-150923.jpg",
+      "type": "demon"
     },
     {
       "name": "Buzz L'éclair",
       "value": 3,
       "health": 4,
       "attq": 4,
-      "img": "img/figures/336x448_Disney_0000s_0015_71012_Leaflet_Buzz-Lightyear-hire.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0015_71012_Leaflet_Buzz-Lightyear-hire.jpg",
+      "type": "fighter"
     },
     {
       "name": "Maléfique",
       "value": 3,
       "health": 3,
       "attq": 3,
-      "img": "img/figures/336x448_Disney_0000s_0016_71012_Leaflet_Malificent-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0016_71012_Leaflet_Malificent-hires.jpg",
+      "type": "demon"
     },
     {
       "name": "Génie de la lampe",
       "value": 2,
       "health": 2,
       "attq": 2,
-      "img": "img/figures/336x448_Disney_0000s_0017_71012_Leaflet_Genie-hires.jpg"
+      "img": "img/figures/336x448_Disney_0000s_0017_71012_Leaflet_Genie-hires.jpg",
+      "type": "angel"
     },
     {
       "name": "Elfe",
       "value": 4,
       "health": 3,
       "attq": 4,
-      "img": "img/figures/336x448_ElfMaiden.png"
+      "img": "img/figures/336x448_ElfMaiden.png",
+      "type": "angel"
     },
     {
       "name": "La prof de fitness",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_FitnessInstructor.png"
+      "img": "img/figures/336x448_FitnessInstructor.png",
+      "type": "villager"
     },
     {
       "name": "Gladiateur",
       "value": 5,
       "health": 3,
       "attq": 6,
-      "img": "img/figures/336x448_Gladiator.png"
+      "img": "img/figures/336x448_Gladiator.png",
+      "type": "fighter"
     },
     {
       "name": "Cuisinier",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_GourmetChef.png"
+      "img": "img/figures/336x448_GourmetChef.png",
+      "type": "villager"
     },
     {
       "name": "Bandit de grand chemin",
       "value": 4,
       "health": 4,
       "attq": 4,
-      "img": "img/figures/336x448_Highwayman.png"
+      "img": "img/figures/336x448_Highwayman.png",
+      "type": "fighter"
     },
     {
       "name": "Vendeur de Hotdog",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_Hotdog_Vendor.png"
+      "img": "img/figures/336x448_Hotdog_Vendor.png",
+      "type": "villager"
     },
     {
       "name": "Surfeur",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_Prosurfer.png"
+      "img": "img/figures/336x448_Prosurfer.png",
+      "type": "villager"
     },
     {
       "name": "Héro spatial rétro",
       "value": 5,
       "health": 5,
       "attq": 3,
-      "img": "img/figures/336x448_Retrospacehero.png"
+      "img": "img/figures/336x448_Retrospacehero.png",
+      "type": "angel"
     },
     {
       "name": "Garçon fusée",
       "value": 3,
       "health": 3,
       "attq": 2,
-      "img": "img/figures/336x448_RocketBoy.png"
+      "img": "img/figures/336x448_RocketBoy.png",
+      "type": "fighter"
     },
     {
       "name": "Homme fort du cirque",
       "value": 3,
       "health": 2,
       "attq": 5,
-      "img": "img/figures/336x448_Strongman.png"
+      "img": "img/figures/336x448_Strongman.png",
+      "type": "fighter"
     },
     {
       "name": "Vétérinaire",
       "value": 2,
       "health": 1,
       "attq": 3,
-      "img": "img/figures/336x448_Vet.png"
+      "img": "img/figures/336x448_Vet.png",
+      "type": "villager"
     },
     {
       "name": "Yuppie",
       "value": 1,
       "health": 1,
       "attq": 1,
-      "img": "img/figures/336x448_Yuppie.png"
+      "img": "img/figures/336x448_Yuppie.png",
+      "type": "villager"
     },
     {
       "name": "Ninja",
       "value": 6,
       "health": 4,
       "attq": 7,
-      "img": "img/figures/8683_Portrait_Ninja.png"
+      "img": "img/figures/8683_Portrait_Ninja.png",
+      "type": "fighter"
     },
     {
       "name": "Space Marine",
       "value": 9,
       "health": 8,
       "attq": 8,
-      "img": "img/figures/8831_Portrait_SpaceMarine.png"
+      "img": "img/figures/8831_Portrait_SpaceMarine.png",
+      "type": "angel"
     },
     {
       "name": "Le vengeur extraterrestre",
       "value": 9,
       "health": 6,
       "attq": 10,
-      "img": "img/figures/71000_Portrait_SpaceOrc.png"
+      "img": "img/figures/71000_Portrait_SpaceOrc.png",
+      "type": "demon"
     },
     {
       "name": "Panda",
       "value": 4,
       "health": 3,
       "attq": 3,
-      "img": "img/figures/71004_Portrait_DudePanda.png"
+      "img": "img/figures/71004_Portrait_DudePanda.png",
+      "type": "villager"
     },
     {
       "name": "Bart",
       "value": 3,
       "health": 1,
       "attq": 5,
-      "img": "img/figures/Bart_168x224.jpg"
+      "img": "img/figures/Bart_168x224.jpg",
+      "type": "fighter"
     },
     {
       "name": "Chtullu",
       "value": 9,
       "health": 10,
       "attq": 10,
-      "img": "img/figures/characters_168x224_serie13_Alien.png"
+      "img": "img/figures/characters_168x224_serie13_Alien.png",
+      "type": "demon"
     },
     {
       "name": "Licorne",
       "value": 5,
       "health": 6,
       "attq": 7,
-      "img": "img/figures/characters_168x224_serie13_Unicorn.png"
+      "img": "img/figures/characters_168x224_serie13_Unicorn.png",
+      "type": "angel"
     },
     {
       "name": "Homer",
       "value": 4,
       "health": 2,
       "attq": 5,
-      "img": "img/figures/Homer_168x224.jpg"
+      "img": "img/figures/Homer_168x224.jpg",
+      "type": "villager"
     }
   ]
 }
