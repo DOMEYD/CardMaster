@@ -1,3 +1,5 @@
+@import "~Style/mixins";
+
 .final-taunt {
   position: absolute;
   top: 0;
@@ -19,5 +21,9 @@
     font-family: "Patrick Hand", Helvetica, serif;
     text-align: center;
     font-size: 3.5rem;
+
+    @include breakpoint(xs) {
+      font-size: 2rem;
+    }
   }
 }
