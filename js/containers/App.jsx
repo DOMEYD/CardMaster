@@ -8,6 +8,7 @@ import cards from '../reducers/cards';
 import cardsSelected from '../reducers/cardsSelected';
 import board from '../reducers/board';
 import enemyCards from '../reducers/enemyCards';
+import game from '../reducers/game';
 // Containers
 import CardList from './CardList/CardList';
 import CardFight from './CardFight/CardFight';
@@ -18,6 +19,7 @@ const store = createStore(combineReducers({
   cardsSelected,
   board,
   enemyCards,
+  game,
 }), applyMiddleware(thunk));
 
 class App extends Component {

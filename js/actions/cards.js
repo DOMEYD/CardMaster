@@ -12,6 +12,10 @@ export const removeCard = card => ({
   card,
 });
 
+export const wipeHand = () => ({
+  type: 'CARD_WIPE_SELECTION',
+});
+
 export const moveToBoard = card => (dispatch) => {
   dispatch(removeCard(card));
   dispatch({
