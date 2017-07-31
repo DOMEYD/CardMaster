@@ -225,7 +225,7 @@
 .enemy-card {
   position: relative;
 
-  &.over {
+  &.over:not(.not-drop) {
     &::after {
       content: '';
       position: absolute;

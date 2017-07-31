@@ -7,8 +7,10 @@ import Card from './Card';
 import './style.scss';
 
 const cardSource = {
-  beginDrag() {
-    return {};
+  beginDrag(props) {
+    return {
+      type: props.card.type,
+    };
   },
   endDrag(props, monitor) {
     // if target handled

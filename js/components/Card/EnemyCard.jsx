@@ -10,6 +10,13 @@ const enemyTarget = {
       card: props.card,
     };
   },
+  canDrop(props, monitor) {
+    const item = monitor.getItem();
+    if (item.type === 'angel' && props.card.type !== 'demon' && props.card.type !== 'fighter') {
+      return false;
+    }
+    return true;
+  },
 };
 
 @DropTarget('card', enemyTarget, (con, monitor) => ({
@@ -22,16 +29,18 @@ class EnemyCard extends Component {
     card: PropTypes.shape().isRequired,
     connectDropTarget: PropTypes.func,
     isOver: PropTypes.bool,
+    canDrop: PropTypes.bool,
   };
 
   static defaultProps = {
     connectDropTarget: null,
     isOver: false,
+    canDrop: false,
   };
 
   render() {
-    const { connectDropTarget, isOver } = this.props;
-    return connectDropTarget(<div className={`enemy-card${isOver ? ' over' : ''}`}>
+    const { connectDropTarget, isOver, canDrop } = this.props;
+    return connectDropTarget(<div className={`enemy-card${isOver ? ' over' : ''}${canDrop ? '' : ' not-drop'}`}>
       <Card card={this.props.card} {...this.props} />
     </div>);
   }
