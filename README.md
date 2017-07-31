@@ -23,6 +23,13 @@ A modern browser which support
   - Drag'n'Drop : http://caniuse.com/#feat=dragndrop
   - Flexbox : http://caniuse.com/#search=flex
 
+- Technicals data
+This project use React with Redux in base.
+Use React-DND too to handle drag'n'drop.
+Use React Router to handle pages.
+Compiled with webpack combine with babel to transpile es6 => es5.
+CS with eslint. Type checking (minimal) with PropTypes.
+
 All right reserved on picture at Lego compagny.
 All description and figures coming from https://www.lego.com/fr-fr/minifigures/characters
 
