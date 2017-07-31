@@ -136,7 +136,9 @@ class CardList extends Component {
             )) }
           </ul>
         </section>
-        <Link to="/fight" className="fight-btn">FIGHT !</Link>
+        <Link to="/fight" className={`fight-btn${this.props.cardsSelected.length < 5 ? ' disabled' : ''}`}>
+          FIGHT ! {this.props.cardsSelected.length} / 5
+        </Link>
       </aside>
     </div>);
   }
