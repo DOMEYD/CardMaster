@@ -19,6 +19,14 @@ const boardTarget = {
       type: 'BOARD',
     };
   },
+  canDrop(props, monitor) {
+    const item = monitor.getItem();
+    // prevent already onboard to move in board
+    if (item.onboard) {
+      return false;
+    }
+    return true;
+  },
 };
 
 @DropTarget('card', boardTarget, (con, monitor) => ({
@@ -33,17 +41,19 @@ class Board extends Component {
       name: PropTypes.string,
     })),
     isOver: PropTypes.bool,
+    canDrop: PropTypes.bool,
   };
 
   static defaultProps = {
     board: null,
     isOver: false,
+    canDrop: false,
     connectDropTarget: null,
   };
 
   render() {
-    const { connectDropTarget, board, isOver } = this.props;
-    return connectDropTarget(<section className={`board ${isOver ? ' over' : ''}`}>
+    const { connectDropTarget, board, isOver, canDrop } = this.props;
+    return connectDropTarget(<section className={`board ${isOver && canDrop ? ' over' : ''}`}>
       {board ? board.map(card => <DraggableCard key={card.name} card={card} />) : null}
       <NotificationSystem ref={(c) => { this.notificationSystem = c; }} />
     </section>);
