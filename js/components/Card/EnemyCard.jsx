@@ -20,6 +20,10 @@ const enemyTarget = {
     if (item.type === 'angel' && props.card.type !== 'demon' && props.card.type !== 'fighter') {
       return false;
     }
+    // prevent villager to fight to angel
+    if (item.type === 'villager' && props.card.type === 'angel') {
+      return false;
+    }
     return true;
   },
 };
