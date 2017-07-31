@@ -9,11 +9,12 @@ import './style.scss';
 
 class CardList extends Component {
   static propTypes = {
-    dispatch: PropTypes.func.isRequired,
     cards: PropTypes.shape({
       data: PropTypes.array.isRequired,
     }).isRequired,
     cardsSelected: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
+    addCardToSelection: PropTypes.func.isRequired,
+    removeCardFromSelection: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -82,23 +83,13 @@ class CardList extends Component {
     });
   }
 
-  @autobind
-  toggleCardSelection(card) {
-    this.props.dispatch(addCard(card));
-  }
-
-  @autobind
-  removeCardFromSelection(card) {
-    this.props.dispatch(removeCard(card));
-  }
-
   render() {
     const { cardsSelected } = this.props;
     return (<div className="card-list-container">
       <ul className="card-list">
         { this.cards().map(card => (
           <li key={card.name}>
-            <a href="#" onClick={() => cardsSelected.indexOf(card) === -1 && this.toggleCardSelection(card)}>
+            <a href="#" onClick={() => cardsSelected.indexOf(card) === -1 && this.props.addCardToSelection(card)}>
               <Card
                 card={card}
                 selected={cardsSelected.indexOf(card) !== -1}
@@ -138,7 +129,7 @@ class CardList extends Component {
           <ul>
             { this.props.cardsSelected.map(selected => (
               <li key={selected.name}>
-                <a href="#" onClick={() => this.removeCardFromSelection(selected)}>
+                <a href="#" onClick={() => this.props.removeCardFromSelection(selected)}>
                   <Card card={selected} minimal />
                 </a>
               </li>
@@ -158,4 +149,9 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(CardList);
+const mapDispatchToProps = dispatch => ({
+  addCardToSelection: card => dispatch(addCard(card)),
+  removeCardFromSelection: card => dispatch(removeCard(card)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CardList);
