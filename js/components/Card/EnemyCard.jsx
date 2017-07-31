@@ -12,6 +12,11 @@ const enemyTarget = {
   },
   canDrop(props, monitor) {
     const item = monitor.getItem();
+    // prevent not onboard to fight enemy card
+    if (!item.onboard) {
+      return false;
+    }
+    // prevent angel to fight good guys
     if (item.type === 'angel' && props.card.type !== 'demon' && props.card.type !== 'fighter') {
       return false;
     }

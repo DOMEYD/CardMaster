@@ -9,6 +9,7 @@ import './style.scss';
 const cardSource = {
   beginDrag(props) {
     return {
+      onboard: props.card.isOnboard,
       type: props.card.type,
     };
   },
