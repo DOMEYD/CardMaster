@@ -77,6 +77,11 @@ class Card extends PureComponent {
         onRequestClose={() => this.setState({ modal: false })}
         className="card-modal"
         contentLabel="card data"
+        style={{
+          overlay: {
+            zIndex: 2,
+          },
+        }}
       >
         <h2 className="card-name">{card.name} ({card.type})</h2>
         <div className="card-infos">
