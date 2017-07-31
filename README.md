@@ -11,6 +11,12 @@ To fight a card, you need to first move your card on the board, then you can fig
 The enemy card lose life until life doesn't go under 0. When an enemy died, it's card died and move out from the enemy hand.
 Enemy doesn't fight back. He's only a punching ball.
 
+- Classes
+Villager : A simple figure which only know fight basics.
+Fighter : A medium figure. He want to always fight with other. A bad boy !
+Angel : An advanced character. Fight only bad guys like demons.
+Demons : An advanced character. In a world where only good people are in harmony, one flaw persist, DEMONS ! 
+
 - Requirement
 A modern browser which support 
   - Drag'n'Drop : http://caniuse.com/#feat=dragndrop
