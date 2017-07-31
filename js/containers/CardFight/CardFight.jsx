@@ -43,6 +43,9 @@ class CardFight extends Component {
     if (this.props.enemyCards.length > 0 && nextProps.enemyCards.length <= 0) {
       this.props.endingGame();
     }
+    if (!this.props.game.winner && nextProps.game.winner) {
+      setTimeout(() => this.props.history.push('/'), 4000);
+    }
   }
 
   render() {
