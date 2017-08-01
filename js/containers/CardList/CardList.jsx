@@ -35,7 +35,7 @@ class CardList extends Component {
   @autobind
   filterCards(e) {
     const filterName = e.currentTarget.name;
-    if (!['amounts', 'health', 'attq'].indexOf(filterName)) {
+    if (['amounts', 'health', 'attq'].indexOf(filterName) === -1) {
       // Prevent add not handled filter
       return;
     }
