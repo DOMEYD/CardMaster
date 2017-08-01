@@ -10,7 +10,7 @@ class FinalTaunt extends Component {
   render() {
     return (<div className="final-taunt">
       <p>
-        { this.props.winnerType === 'player' ? 'Hahaha! Vous êtes mort!' : 'Toujours vivant ! Toujours debout !' }
+        { this.props.winnerType === 'player' ? 'Vous : Hodor !' : 'Enemy : Que dit-on au Dieu de la Mort ? – Pas aujourd’hui.' }
       </p>
     </div>);
   }
