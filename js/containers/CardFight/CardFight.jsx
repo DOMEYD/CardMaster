@@ -44,7 +44,8 @@ class CardFight extends Component {
       this.props.endingGame();
     }
     if (!this.props.game.winner && nextProps.game.winner) {
-      setTimeout(() => this.props.history.push('/'), 4000);
+      // hard reset game
+      setTimeout(() => { window.location = '/'; }, 4000);
     }
   }
 
